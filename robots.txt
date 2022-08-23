@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://clairechen3.github.io/clairerepos/sitemap.xml

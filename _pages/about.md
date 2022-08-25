@@ -4,6 +4,7 @@ title: About Me
 permalink: /about/
 ---
 I am Claire, a junior at Del Norte High School taking APCSP:)
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 

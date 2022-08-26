@@ -58,9 +58,20 @@
   
 
   
+      ,"page1": {
+          "title": "Claire's Jupyter Notebook",
+          "content": "",
+          "url": "https://clairechen3.github.io/clairerepos/_pages/2022-08-26-Jupyter.html",
+          "relUrl": "/_pages/2022-08-26-Jupyter.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "I am Claire, a junior at Del Norte High School taking APCSP:) . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://clairechen3.github.io/clairerepos/about/",
@@ -92,7 +103,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://clairechen3.github.io/clairerepos/robots.txt",

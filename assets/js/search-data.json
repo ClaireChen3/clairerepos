@@ -113,9 +113,20 @@
   
 
   
+      ,"page2": {
+          "title": "Vocab",
+          "content": "Terms to Know . input = instructions you give to a computer | output = information computer gives to you | sequence = several lines of code together | . Python Linux Commands . pwd = print working directory | cd = change directory | mkdir = make directory | ls = list directory | Python syntax print(“”) | .",
+          "url": "https://clairechen3.github.io/clairerepos/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "I am Claire, a junior at Del Norte High School taking APCSP:) . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://clairechen3.github.io/clairerepos/about/",
@@ -147,7 +158,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://clairechen3.github.io/clairerepos/robots.txt",

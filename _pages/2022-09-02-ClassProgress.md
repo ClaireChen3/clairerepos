@@ -20,7 +20,7 @@ title: Class Progress
 
     <tr>
         <td>
-            3
+            3 😴
         </td>
         <td><a href="{{site.baseurl}}/week/3">Creative Development</a></td>
         <td>
@@ -29,7 +29,7 @@ title: Class Progress
         <td>
     </tr>
         <td>
-            2 🚧
+            2 🤨
         </td>
         <td>
             <a href="{{site.baseurl}}/week/2">Data Abstraction</a>
@@ -41,7 +41,7 @@ title: Class Progress
         <td>
     <tr>
         <td>
-            1 💰
+            1 🤧
         </td>
         <td>
             <a href="{{site.baseurl}}/week/1">Introduction to Python</a>
@@ -52,7 +52,7 @@ title: Class Progress
         <td>
     </tr>
         <td>
-            0 💰
+            0 😐
         </td>
         <td><a href="{{site.baseurl}}/week/0">Tool Setup</a></td>
         <td>

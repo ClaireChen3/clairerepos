@@ -28,8 +28,6 @@ title: Class Progress
         </td>
         <td>
     </tr>
-
-    <tr>
         <td>
             2 🚧
         </td>
@@ -41,8 +39,6 @@ title: Class Progress
             <br/>
             Alumni Panel (extra credit)        </td>
         <td>
-    </tr>
-
     <tr>
         <td>
             1 💰
@@ -55,8 +51,6 @@ title: Class Progress
         </td>
         <td>
     </tr>
-    
-    <tr>
         <td>
             0 💰
         </td>
@@ -65,6 +59,4 @@ title: Class Progress
             <a href="{{site.baseurl}}/collegeboard/history">Scoring History</a>
         </td>
         <td>
-    </tr>
-    
-</table>
+    </table>

@@ -4,11 +4,6 @@ permalink: /Class Progress
 title: Class Progress
 ---
 
-<!-- Canvas Course -->
-{% assign canvas = "https://poway.instructure.com/courses/127268/assignments" %}
-{% assign apcsp = "https://nighthawkcoders.github.io/APCSP" %}
-{% assign issues = "https://github.com/nighthawkcoders/APCSP/issues" %}
-
 ## Class Progress
 > Things I've learned every week in CSP
 

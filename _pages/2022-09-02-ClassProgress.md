@@ -15,46 +15,24 @@ title: Class Progress
 <table>
     <tr>
      <th>Week</th>
+     <th>Topics</th>
      <th>Notes</th>
-     <th>Links</th>
-
-    <tr>
-        <td>
-            3 😴
-        </td>
-        <td><a href="{{site.baseurl}}/week/3">Creative Development</a></td>
-        <td>
-            <a href="{{site.baseurl}}/collegeboard/bria">How I got a  5!</a>
-        </td>
-
-    <tr>
-        <td>
-            2 🤨
-        </td>
-        <td><a href="{{site.baseurl}}/week/2">Data Abstraction</a>
-        </td>
-        <td>
-            <a href="{{site.baseurl}}/collegeboard/anthony-and-sahil">Reflections on Computer Science</a>
-            <br/>
-            Alumni Panel (extra credit)        </td>
-        <td>
-
-    <tr>
-        <td>
-            1 🤧
-        </td>
-        <td><a href="{{site.baseurl}}/week/1">Introduction to Python</a>
-        </td>
-        <td>
-            Table Visits
-        </td>
-        <td>
-
     </tr>
-        <td>
-            0 😐
-        </td>
-        <td><a href="{{site.baseurl}}/week/0">Tool Setup</a></td>
-        <td><a href="{{site.baseurl}}/collegeboard/history">Scoring History</a>
-        </td>
-<table>
+    <tr>
+        <td>3 😴</td>
+        <td> Lists, dictionaries, loops, tables and tags</td>
+        <td> links</td>
+
+        <td>2 🤨</td>
+        <td>Lists, dictionaries, loops, tables and tags</td>
+        <td> links</td>
+        
+        <td>1 🤧</td>
+        <td>Python hello, Python quiz, Python commands, Bash and Tools check </td>
+        <td> links</td>
+
+        <td> 0 😐</td>
+        <td>Install: VScode, IDE, Jupyter, Python, Anaconda, wsl, kernels</td>
+        <td> links</td>
+    </tr>
+</table>

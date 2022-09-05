@@ -3,10 +3,6 @@ layout: page
 permalink: /Class Progress
 title: Class Progress
 ---
-
-## Class Progress
-> Things I've learned every week in CSP
-
 <table>
     <tr>
      <th>Week</th>

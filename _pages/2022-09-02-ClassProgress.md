@@ -1,6 +1,8 @@
 ---
+toc: true
 layout: page
 permalink: /Class Progress
+categories: [markdown]
 title: Class Progress
 ---
 <table>

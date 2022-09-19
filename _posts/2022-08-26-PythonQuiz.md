@@ -1,6 +1,9 @@
 ---
 keywords: fastai
 title: Python Quiz
+toc: false
+badges: true
+categories: [markdown, week 1]
 nb_path: _notebooks/2022-08-26-PythonQuiz.ipynb
 layout: notebook
 ---

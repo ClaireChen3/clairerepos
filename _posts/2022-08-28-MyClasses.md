@@ -1,10 +1,9 @@
 ---
 keywords: fastai
-summary: todo list
-title: APCalc - HTML Fragments
+description: todo list
+title: My Classes
 toc: true
-layout: post
-description: - categories: [classes]
+categories: [markdown, week 1]
 nb_path: _notebooks/2022-08-28-MyClasses.ipynb
 layout: notebook
 ---

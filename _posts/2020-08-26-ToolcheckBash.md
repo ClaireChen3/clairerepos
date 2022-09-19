@@ -1,6 +1,9 @@
 ---
 keywords: fastai
 title: Tool Check and Bash
+toc: false
+badges: true
+categories: [markdown, week 1]
 nb_path: _notebooks/2020-08-26-ToolcheckBash.ipynb
 layout: notebook
 ---
@@ -34,9 +37,9 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>python --version
-python2 --version
-conda list
+<div class=" highlight hl-python"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">python2</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">conda</span> <span class="nb">list</span>
 </pre></div>
 
     </div>
@@ -505,18 +508,18 @@ zstd                      1.4.9                haebb681_0
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Conda Check
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Conda</span> <span class="n">Check</span>
 <span class="c1"># test for a kernel installation</span>
-<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
-<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>conda list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
-<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+<span class="n">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
+<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">conda</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
+<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
 
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
-<span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
+<span class="n">then</span> <span class="c1"># greater than zero</span>
+    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
-<span class="k">fi</span>
+    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -556,19 +559,19 @@ jupyterlab_widgets        1.0.0              pyhd3eb1b0_1
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>jupyter --version
-jupyter kernelspec list
+<div class=" highlight hl-python"><pre><span></span><span class="n">jupyter</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span>
 <span class="c1"># test for a kernel installation</span>
-<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
-<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
-<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+<span class="n">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
+<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
+<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
 
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
-<span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
+<span class="n">then</span> <span class="c1"># greater than zero</span>
+    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
-<span class="k">fi</span>
+    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -617,32 +620,32 @@ Available kernels:
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Using conditional statement to create a project directory and project&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Using conditional statement to create a project directory and project&quot;</span>
 
 <span class="c1"># Variable section</span>
-<span class="nb">export</span> <span class="nv">project_dir</span><span class="o">=</span><span class="nv">$HOME</span>/vscode  <span class="c1"># change vscode to different name to test git clone</span>
-<span class="nb">export</span> <span class="nv">project</span><span class="o">=</span><span class="nv">$project_dir</span>/APCSP  <span class="c1"># change APCSP to name of project from git clone</span>
-<span class="nb">export</span> <span class="nv">project_repo</span><span class="o">=</span><span class="s2">&quot;https://github.com/nighthawkcoders/APCSP.git&quot;</span>  <span class="c1"># change to project of choice</span>
+<span class="n">export</span> <span class="n">project_dir</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">vscode</span>  <span class="c1"># change vscode to different name to test git clone</span>
+<span class="n">export</span> <span class="n">project</span><span class="o">=</span><span class="err">$</span><span class="n">project_dir</span><span class="o">/</span><span class="n">APCSP</span>  <span class="c1"># change APCSP to name of project from git clone</span>
+<span class="n">export</span> <span class="n">project_repo</span><span class="o">=</span><span class="s2">&quot;https://github.com/nighthawkcoders/APCSP.git&quot;</span>  <span class="c1"># change to project of choice</span>
 
-<span class="nb">cd</span> ~    <span class="c1"># start in home directory</span>
+<span class="n">cd</span> <span class="o">~</span>    <span class="c1"># start in home directory</span>
 
 <span class="c1"># Conditional block to make a project directory</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project_dir</span> <span class="o">]</span>
-<span class="k">then</span> 
-    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> does not exists... makinng directory </span><span class="nv">$project_dir</span><span class="s2">&quot;</span>
-    mkdir -p <span class="nv">$project_dir</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> exists.&quot;</span> 
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project_dir</span> <span class="p">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s2">&quot;Directory $project_dir does not exists... makinng directory $project_dir&quot;</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">project_dir</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">&quot;Directory $project_dir exists.&quot;</span> 
 
 <span class="c1"># Conditional block to git clone a project from project_repo</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> does not exists... cloning </span><span class="nv">$project_repo</span><span class="s2">&quot;</span>
-    <span class="nb">cd</span> <span class="nv">$project_dir</span>
-    git clone <span class="nv">$project_repo</span>
-    <span class="nb">cd</span> ~
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> exists.&quot;</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;Directory $project does not exists... cloning $project_repo&quot;</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">project_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">project_repo</span>
+    <span class="n">cd</span> <span class="o">~</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">&quot;Directory $project exists.&quot;</span>
 </pre></div>
 
     </div>
@@ -675,21 +678,21 @@ Directory /home/claire/vscode/APCSP exists.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">pwd</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">pwd</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
-ls
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
+<span class="n">ls</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
-ls -a   <span class="c1"># hidden files flag, many shell commands have flags</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">a</span>   <span class="c1"># hidden files flag, many shell commands have flags</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
-ls -al   <span class="c1"># all files and long listing</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">al</span>   <span class="c1"># all files and long listing</span>
 </pre></div>
 
     </div>
@@ -766,11 +769,11 @@ drwxr-xr-x  2 claire claire  4096 Aug 21 20:33 <span class="ansi-blue-intense-fg
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
-<span class="nb">export</span> <span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts  <span class="c1"># _posts inside project</span>
-<span class="nb">cd</span> <span class="nv">$posts</span>  <span class="c1"># this should exist per fastpages</span>
-<span class="nb">pwd</span>  <span class="c1"># present working directory</span>
-ls -l  <span class="c1"># list posts</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
+<span class="n">export</span> <span class="n">posts</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_posts</span>  <span class="c1"># _posts inside project</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">posts</span>  <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>  <span class="c1"># present working directory</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list posts</span>
 </pre></div>
 
     </div>
@@ -830,11 +833,11 @@ total 228
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
-<span class="nb">export</span> <span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks  <span class="c1"># _notebooks is inside project</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>   <span class="c1"># this should exist per fastpages</span>
-<span class="nb">pwd</span>  <span class="c1"># present working directory</span>
-ls -l  <span class="c1"># list notebooks</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
+<span class="n">export</span> <span class="n">notebooks</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_notebooks</span>  <span class="c1"># _notebooks is inside project</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span>   <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>  <span class="c1"># present working directory</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list notebooks</span>
 </pre></div>
 
     </div>
@@ -876,10 +879,10 @@ drwxr-xr-x 2 claire claire  4096 Aug 21 20:33 <span class="ansi-blue-intense-fg 
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>/images  <span class="c1"># this should exist per fastpages</span>
-<span class="nb">pwd</span>
-ls -l
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span><span class="o">/</span><span class="n">images</span>  <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 </pre></div>
 
     </div>
@@ -913,15 +916,15 @@ total 100
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
 
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
 
-cat README.md  <span class="c1"># show contents of file, in this case markdown</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+<span class="n">cat</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>  <span class="c1"># show contents of file, in this case markdown</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
 </pre></div>
 
     </div>
@@ -985,10 +988,10 @@ end of README.md
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
 
-env
+<span class="n">env</span>
 </pre></div>
 
     </div>
@@ -1067,16 +1070,16 @@ _=/usr/bin/env
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> <span class="nv">$project</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
-<span class="nb">cd</span> .git
-ls -l
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
+<span class="n">cd</span> <span class="o">.</span><span class="n">git</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;look at config file&quot;</span>
-cat config
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;look at config file&quot;</span>
+<span class="n">cat</span> <span class="n">config</span>
 </pre></div>
 
     </div>

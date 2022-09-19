@@ -3,7 +3,7 @@ keywords: fastai
 title: Python List
 toc: false
 badges: true
-categories: [markdown, 2]
+categories: [markdown, week 2]
 nb_path: _notebooks/2022-08-30-PythonList.ipynb
 layout: notebook
 ---

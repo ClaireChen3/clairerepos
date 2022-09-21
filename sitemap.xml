@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://clairechen3.github.io/clairerepos/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://clairechen3.github.io/clairerepos/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://clairechen3.github.io/clairerepos/markdown/week%201/2020/08/26/ToolcheckBash.html</loc>
-<lastmod>2020-08-26T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://clairechen3.github.io/clairerepos/markdown/2022/08/22/Markdown.html</loc>
 <lastmod>2022-08-22T00:00:00-05:00</lastmod>
 </url>
@@ -29,20 +17,12 @@
 <lastmod>2022-08-28T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://clairechen3.github.io/clairerepos/markdown/week%201/2022/08/28/MyClasses.html</loc>
-<lastmod>2022-08-28T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://clairechen3.github.io/clairerepos/markdown/week%201/2022/08/29/AlumniPanelNotes.html</loc>
 <lastmod>2022-08-29T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://clairechen3.github.io/clairerepos/markdown/week%202/2022/08/30/PythonList.html</loc>
 <lastmod>2022-08-30T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://clairechen3.github.io/clairerepos/markdown/week%202/2022/09/05/IntroList.html</loc>
-<lastmod>2022-09-05T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://clairechen3.github.io/clairerepos/markdown/week%203/2022/09/11/CodeQuiz.html</loc>
@@ -63,6 +43,10 @@
 <url>
 <loc>https://clairechen3.github.io/clairerepos/markdown/2022/09/18/docker-server.html</loc>
 <lastmod>2022-09-18T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://clairechen3.github.io/clairerepos/markdown/week%205/2022/09/19/CheckLocal.html</loc>
+<lastmod>2022-09-19T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://clairechen3.github.io/clairerepos/_pages/2022-08-22-Markdown.html</loc>
@@ -87,8 +71,5 @@
 </url>
 <url>
 <loc>https://clairechen3.github.io/clairerepos/categories/</loc>
-</url>
-<url>
-<loc>https://clairechen3.github.io/clairerepos/page2/</loc>
 </url>
 </urlset>

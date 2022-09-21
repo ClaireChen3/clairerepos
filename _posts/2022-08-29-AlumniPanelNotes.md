@@ -4,7 +4,7 @@ description: extra credit
 title: Alumni Panel Notes
 toc: false
 badges: true
-categories: [jupyter]
+categories: [markdown, week 1]
 nb_path: _notebooks/2022-08-29-AlumniPanelNotes.ipynb
 layout: notebook
 ---

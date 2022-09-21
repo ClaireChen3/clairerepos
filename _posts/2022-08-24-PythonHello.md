@@ -1,6 +1,9 @@
 ---
 keywords: fastai
 title: Python Hello
+toc: false
+badges: true
+categories: [markdown, week 1]
 nb_path: _notebooks/2022-08-24-PythonHello.ipynb
 layout: notebook
 ---

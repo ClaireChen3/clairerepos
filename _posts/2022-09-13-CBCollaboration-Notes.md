@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: Creative Performance Task Outline
+title: Collaboration Notes
 toc: true 
 badges: true
 comments: true 

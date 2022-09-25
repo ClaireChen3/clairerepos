@@ -24,9 +24,10 @@ layout: notebook
 <li>companies like google collaborate to create a cohesive company (ios, android, art, social media)</li>
 <li>collaboration helps us to compare or combine our ideas to </li>
 <li>collaborating produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it
-produce the best result.
-### Video 2: 
-ways to collaborate in APCSP</li>
+produce the best result.</li>
+</ul>
+<h3 id="Video-2:">Video 2:<a class="anchor-link" href="#Video-2:"> </a></h3><p>ways to collaborate in APCSP</p>
+<ul>
 <li>pair programming<ul>
 <li>one driver(types the program)</li>
 <li>one observer(reviews drivers code)</li>

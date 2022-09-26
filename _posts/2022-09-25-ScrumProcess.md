@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Hacks
 categories: [markdown]
-title: Markdown Post
+title: Scrum process
 ---
+![]({{ site.baseurl }}/images/Our Scrum Process.png)

@@ -6,3 +6,6 @@ title: Java Usage
 ---
 {% include navbar.html %}}
 
+### Java Table
+![]({{ site.baseurl }}/images/Our Scrum Process.png)
+

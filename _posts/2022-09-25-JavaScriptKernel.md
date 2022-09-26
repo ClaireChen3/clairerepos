@@ -225,8 +225,8 @@ object ; [ 1, 2, 3 ]
 <span class="p">}</span>
 
 <span class="c1">// make a new Person and assign to variable teacher</span>
-<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Claire&quot;</span><span class="p">,</span> <span class="s2">&quot;ClaireChen3&quot;</span><span class="p">,</span> <span class="mf">2024</span><span class="p">);</span>
-<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Student&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Mr M&quot;</span><span class="p">,</span> <span class="s2">&quot;jm1021&quot;</span><span class="p">,</span> <span class="mf">1977</span><span class="p">);</span>
+<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Teacher&quot;</span><span class="p">);</span>
 
 <span class="c1">// output of Object and JSON/string associated with Teacher</span>
 <span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
@@ -243,12 +243,8 @@ object ; [ 1, 2, 3 ]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; Person {
-  name: &#39;Claire&#39;,
-  ghID: &#39;ClaireChen3&#39;,
-  classOf: 2024,
-  role: &#39;Student&#39; }
-string ; {&#34;name&#34;:&#34;Claire&#34;,&#34;ghID&#34;:&#34;ClaireChen3&#34;,&#34;classOf&#34;:2024,&#34;role&#34;:&#34;Student&#34;}
+<pre>object ; Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; }
+string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;role&#34;:&#34;Teacher&#34;}
 </pre>
 </div>
 </div>
@@ -268,7 +264,6 @@ string ; {&#34;name&#34;:&#34;Claire&#34;,&#34;ghID&#34;:&#34;ClaireChen3&#34;,&
     <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a student Array of Person(s)</span>
 <span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span> 
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Mr. Yeung&quot;</span><span class="p">,</span> <span class="s2">&quot;Yeung&quot;</span><span class="p">,</span> <span class="mf">2000</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Claire&quot;</span><span class="p">,</span> <span class="s2">&quot;ClaireChen3&quot;</span><span class="p">,</span> <span class="mf">2024</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Aliya&quot;</span><span class="p">,</span> <span class="s2">&quot;aliyatang&quot;</span><span class="p">,</span> <span class="mf">2025</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Sreeja&quot;</span><span class="p">,</span> <span class="s2">&quot;sreejagangapuram&quot;</span><span class="p">,</span> <span class="mf">2024</span><span class="p">),</span>
@@ -309,16 +304,7 @@ string ; {&#34;name&#34;:&#34;Claire&#34;,&#34;ghID&#34;:&#34;ClaireChen3&#34;,&
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; [ Person {
-    name: &#39;Claire&#39;,
-    ghID: &#39;ClaireChen3&#39;,
-    classOf: 2024,
-    role: &#39;Teacher&#39; },
-  Person {
-    name: &#39;Mr. Yeung&#39;,
-    ghID: &#39;Yeung&#39;,
-    classOf: 2000,
-    role: &#39;Student&#39; },
+<pre>object ; [ Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; },
   Person {
     name: &#39;Claire&#39;,
     ghID: &#39;ClaireChen3&#39;,
@@ -339,12 +325,9 @@ string ; {&#34;name&#34;:&#34;Claire&#34;,&#34;ghID&#34;:&#34;ClaireChen3&#34;,&
     ghID: &#39;Ananayag2617&#39;,
     classOf: 2025,
     role: &#39;Student&#39; } ]
-string ; Claire
-string ; {&#34;name&#34;:&#34;Claire&#34;,&#34;ghID&#34;:&#34;ClaireChen3&#34;,&#34;classOf&#34;:2024,&#34;role&#34;:&#34;Teacher&#34;}
-object ; { name: &#39;Claire&#39;,
-  ghID: &#39;ClaireChen3&#39;,
-  classOf: 2024,
-  role: &#39;Teacher&#39; }
+string ; Mr M
+string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;role&#34;:&#34;Teacher&#34;}
+object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; }
 </pre>
 </div>
 </div>
@@ -420,7 +403,7 @@ object ; { name: &#39;Claire&#39;,
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Claire</td><td>ClaireChen3</td><td>2024</td><td>Teacher</td><tr><tr><td>Mr. Yeung</td><td>?</td><td>2222</td><td>Student</td><tr><tr><td>Claire</td><td>ClaireChen3</td><td>2024</td><td>Student</td><tr><tr><td>Aliya</td><td>aliyatang</td><td>2025</td><td>Student</td><tr><tr><td>Sreeja</td><td>sreejagangapuram</td><td>2024</td><td>Student</td><tr><tr><td>Ananya</td><td>Ananayag2617</td><td>2025</td><td>Student</td><tr></table></div>
+<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Claire</td><td>ClaireChen3</td><td>2024</td><td>Student</td><tr><tr><td>Aliya</td><td>aliyatang</td><td>2025</td><td>Student</td><tr><tr><td>Sreeja</td><td>sreejagangapuram</td><td>2024</td><td>Student</td><tr><tr><td>Ananya</td><td>Ananayag2617</td><td>2025</td><td>Student</td><tr></table></div>
 </div>
 
 </div>

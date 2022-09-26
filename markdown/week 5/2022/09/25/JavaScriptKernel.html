@@ -351,8 +351,8 @@ object ; [ 1, 2, 3 ]
 <span class="p">}</span>
 
 <span class="c1">// make a new Person and assign to variable teacher</span>
-<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Claire"</span><span class="p">,</span> <span class="s2">"ClaireChen3"</span><span class="p">,</span> <span class="mf">2024</span><span class="p">);</span>
-<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Mr M"</span><span class="p">,</span> <span class="s2">"jm1021"</span><span class="p">,</span> <span class="mf">1977</span><span class="p">);</span>
+<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">);</span>
 
 <span class="c1">// output of Object and JSON/string associated with Teacher</span>
 <span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
@@ -369,12 +369,8 @@ object ; [ 1, 2, 3 ]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; Person {
-  name: 'Claire',
-  ghID: 'ClaireChen3',
-  classOf: 2024,
-  role: 'Student' }
-string ; {"name":"Claire","ghID":"ClaireChen3","classOf":2024,"role":"Student"}
+<pre>object ; Person { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
+string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
 </pre>
 </div>
 </div>
@@ -394,7 +390,6 @@ string ; {"name":"Claire","ghID":"ClaireChen3","classOf":2024,"role":"Student"}
     <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a student Array of Person(s)</span>
 <span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span> 
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Mr. Yeung"</span><span class="p">,</span> <span class="s2">"Yeung"</span><span class="p">,</span> <span class="mf">2000</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Claire"</span><span class="p">,</span> <span class="s2">"ClaireChen3"</span><span class="p">,</span> <span class="mf">2024</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Aliya"</span><span class="p">,</span> <span class="s2">"aliyatang"</span><span class="p">,</span> <span class="mf">2025</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Sreeja"</span><span class="p">,</span> <span class="s2">"sreejagangapuram"</span><span class="p">,</span> <span class="mf">2024</span><span class="p">),</span>
@@ -435,16 +430,7 @@ string ; {"name":"Claire","ghID":"ClaireChen3","classOf":2024,"role":"Student"}
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; [ Person {
-    name: 'Claire',
-    ghID: 'ClaireChen3',
-    classOf: 2024,
-    role: 'Teacher' },
-  Person {
-    name: 'Mr. Yeung',
-    ghID: 'Yeung',
-    classOf: 2000,
-    role: 'Student' },
+<pre>object ; [ Person { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' },
   Person {
     name: 'Claire',
     ghID: 'ClaireChen3',
@@ -465,12 +451,9 @@ string ; {"name":"Claire","ghID":"ClaireChen3","classOf":2024,"role":"Student"}
     ghID: 'Ananayag2617',
     classOf: 2025,
     role: 'Student' } ]
-string ; Claire
-string ; {"name":"Claire","ghID":"ClaireChen3","classOf":2024,"role":"Teacher"}
-object ; { name: 'Claire',
-  ghID: 'ClaireChen3',
-  classOf: 2024,
-  role: 'Teacher' }
+string ; Mr M
+string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
+object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 </pre>
 </div>
 </div>
@@ -554,17 +537,10 @@ object ; { name: 'Claire',
 <th><mark>Role</mark></th>
 </tr>
 <tr>
-<td>Claire</td>
-<td>ClaireChen3</td>
-<td>2024</td>
+<td>Mr M</td>
+<td>jm1021</td>
+<td>1977</td>
 <td>Teacher</td>
-</tr>
-<tr></tr>
-<tr>
-<td>Mr. Yeung</td>
-<td>?</td>
-<td>2222</td>
-<td>Student</td>
 </tr>
 <tr></tr>
 <tr>

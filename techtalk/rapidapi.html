@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      4 min read
     
 </span></p>
 
@@ -203,56 +203,7 @@ window.onload = wrap_img;
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
-<span class="kn">import</span> <span class="nn">requests</span>
  
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
- 
-<span class="n">DETECT_BASE_URL</span> <span class="o">=</span> <span class="s1">'https://google-translate1.p.rapidapi.com/language/translate/v2/detect'</span>
-<span class="n">TRANSLATE_BASE_URL</span> <span class="o">=</span> <span class="s1">'https://google-translate1.p.rapidapi.com/language/translate/v2'</span>
-<span class="n">HEADERS</span> <span class="o">=</span> <span class="p">{</span>
-   <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"google-translate1.p.rapidapi.com"</span><span class="p">,</span>
-   <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"YOUR-VERY-OWN-RAPID-API-KEY-GOES-HERE"</span><span class="p">,</span>
-   <span class="s1">'content-type'</span><span class="p">:</span> <span class="s2">"application/x-www-form-urlencoded"</span>
-   <span class="p">}</span>
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">health_check</span><span class="p">():</span>
-   <span class="k">return</span> <span class="s1">'Translation Service is up.'</span>
-<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/detect'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">detect</span><span class="p">():</span>
-   <span class="c1"># parse args</span>
-   <span class="n">text</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'text'</span><span class="p">)</span>
- 
-   <span class="c1"># url encode text</span>
-   <span class="n">long_list_of_words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
-   <span class="n">url_encoded_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"q=</span><span class="si">{</span><span class="s1">'%20'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">long_list_of_words</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
- 
-   <span class="n">payload</span> <span class="o">=</span> <span class="n">url_encoded_text</span>
- 
-   <span class="c1"># make the request</span>
-   <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">DETECT_BASE_URL</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
-  
-   <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/translate'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">translate</span><span class="p">():</span>
-   <span class="c1"># parse args</span>
-   <span class="n">text</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'text'</span><span class="p">)</span>
-   <span class="n">target</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'target'</span><span class="p">)</span>
- 
-   <span class="c1"># url encode text</span>
-   <span class="n">long_list_of_words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
-   <span class="n">url_encoded_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"q=</span><span class="si">{</span><span class="s1">'%20'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">long_list_of_words</span><span class="p">)</span><span class="si">}</span><span class="s2">&amp;target=</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s2">"</span>
- 
-   <span class="n">payload</span> <span class="o">=</span> <span class="n">url_encoded_text</span>
- 
-   <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">TRANSLATE_BASE_URL</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
-  
-   <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
- 
- 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-   <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -265,65 +216,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{"data":{"detections":[[{"language":"en","isReliable":false,"confidence":1}]]}}
- * Serving Flask app "__main__" (lazy loading)
- * Environment: production
-<span class="ansi-red-fg">   WARNING: This is a development server. Do not use it in a production deployment.</span>
-   Use a production WSGI server instead.
- * Debug mode: on
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre> * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Restarting with watchdog (inotify)
-/home/claire/anaconda3/lib/python3.9/site-packages/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets &gt;=5.
-  warn(
-/home/claire/anaconda3/lib/python3.9/site-packages/traitlets/traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use 'd2543842-becb-4389-ae60-cc1035d3c835' instead of 'b"d2543842-becb-4389-ae60-cc1035d3c835"'.
-  warn(
-Traceback (most recent call last):
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/ipykernel_launcher.py", line 16, in &lt;module&gt;
-    app.launch_new_instance()
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/traitlets/config/application.py", line 845, in launch_instance
-    app.initialize(argv)
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/traitlets/config/application.py", line 88, in inner
-    return method(app, *args, **kwargs)
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 632, in initialize
-    self.init_sockets()
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 282, in init_sockets
-    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 229, in _bind_socket
-    return self._try_bind_socket(s, port)
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 205, in _try_bind_socket
-    s.bind("tcp://%s:%i" % (self.ip, port))
-  File "/home/claire/anaconda3/lib/python3.9/site-packages/zmq/sugar/socket.py", line 214, in bind
-    super().bind(addr)
-  File "zmq/backend/cython/socket.pyx", line 540, in zmq.backend.cython.socket.Socket.bind
-  File "zmq/backend/cython/checkrc.pxd", line 28, in zmq.backend.cython.checkrc._check_rc
-zmq.error.ZMQError: Address already in use
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-An exception has occurred, use %tb to see the full traceback.
-
-<span class="ansi-red-fg">SystemExit</span><span class="ansi-red-fg">:</span> 1
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/claire/anaconda3/lib/python3.9/site-packages/IPython/core/interactiveshell.py:3377: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
-  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)
+<pre>{"data":{"detections":[[{"confidence":1,"language":"en","isReliable":false}]]}}
 </pre>
 </div>
 </div>

@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Night at the Museum",
+            "title": "Final Test Corrections",
             "content": ". needs location to find restaurants near them, only Alejandra’s contact list is needed because shes the one hosting it. | . . until count is greater than max, that means it will print all numbers less than or equal to max | . . The Internet is an interconnected network of networks, and the World Wide Web is an information system that is accessed via the Internet. | . . overflow error will occur because SUM of 14 and 15 is larger than the largest binary value that can be represented using 4 bits which is 1111 | . . 4 bits can be represented as 2^4=16, which means 4 bits can store 16 pieces of information, only 8 pieces of information has to be stored, so 4 bits is enough | . . first 4 is assigning variables, after those four lines, values are reassigned | p becomes 20, q becomes 30, s becomes 20, r becomes 20 | . . Since num1 is not less than num2, num3 becomes 4, | Since num2 is greater than or equal to num3, num1 becomes 8 | So, num1 + num2 + num3 = 8 + 4 + 4 =16 | . . The variables x and result are initialized to 0. Inside the loop, result is increased by x and x is increased by 1. The loop terminates when x exceeds 5. Therefore, result is assigned the sum of the integers from 0 to 5, or 15. | . . count1 adds 1 for each positive value and count2 adds 1 for every negative or 0 value | . . the first two lines are assigning the value true to “first” and the value false to “second”, the next two are reassigning values | “second” becomes true, “first” becomes true | . . similar to 46, the first three lines are assigning values to the variables, then for every next line, it is reassigning the values | so x becomes 50, y becomes 75, and z becomes 50. | .",
             "url": "https://clairechen3.github.io/clairerepos/markdown/2022/11/07/FinalTestCorrections.html",
             "relUrl": "/markdown/2022/11/07/FinalTestCorrections.html",
@@ -134,7 +134,7 @@
   
     
         ,"post12": {
-            "title": "Week 4 College Board Notes",
+            "title": "Collaboration Notes",
             "content": "Video 1: . companies like google collaborate to create a cohesive company (ios, android, art, social media) | collaboration helps us to compare or combine our ideas to | collaborating produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it produce the best result. | . Video 2: . ways to collaborate in APCSP . pair programming one driver(types the program) | one observer(reviews drivers code) | . | Think, Pair, Share think about a problem alone | share with partner (help one another, compare) | share with class/others | . | leave comments in code( ) to communicate to yourself and others what the code is doing | clarify function of the code | . | get feedback from others | .",
             "url": "https://clairechen3.github.io/clairerepos/markdown/week%204/2022/09/13/CBCollaboration-Notes.html",
             "relUrl": "/markdown/week%204/2022/09/13/CBCollaboration-Notes.html",

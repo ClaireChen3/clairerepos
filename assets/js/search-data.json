@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "print(&quot;What Grade Did You Get?&quot;) grade = input(&quot;Enter Grade:&quot;): if grade &gt;= 90: print(&quot;Wow! Good job!&quot;) elif grade &lt; 90: print(&quot;Nice!&quot;) elif grade &lt; 70: print(&quot;Do Better&quot;) . Input In [25] grade = input(&#34;Enter Grade:&#34;): ^ SyntaxError: invalid syntax .",
-            "url": "https://clairechen3.github.io/clairerepos/2022/11/15/Algorithm.html",
-            "relUrl": "/2022/11/15/Algorithm.html",
+            "title": "Algorithm Examples",
+            "content": "print(&quot;What Grade Did You Get?&quot;) grade = input(&quot;Enter Grade:&quot;) if grade &gt;= 90: print(&quot;Wow! Good job!&quot;) elif grade &lt; 90: print(&quot;Nice!&quot;) elif grade &lt; 70: print(&quot;Do Better&quot;) . What Grade Did You Get? . TypeError Traceback (most recent call last) /home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb Cell 1 in &lt;cell line: 3&gt;() &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt; print(&#34;What Grade Did You Get?&#34;) &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt; grade = input(&#34;Enter Grade:&#34;) -&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt; if grade &gt;= 90: &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt; print(&#34;Wow! Good job!&#34;) &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2022-11-15-Algorithm.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt; elif grade &lt; 90: TypeError: &#39;&gt;=&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; .",
+            "url": "https://clairechen3.github.io/clairerepos/markdown/week%208/2022/11/15/Algorithm.html",
+            "relUrl": "/markdown/week%208/2022/11/15/Algorithm.html",
             "date": " • Nov 15, 2022"
         }
         

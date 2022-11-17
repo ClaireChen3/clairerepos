@@ -18,7 +18,7 @@ type: pbl
 <!-- Hack 3: do your own thing -->
 
 {% assign BITS = 3 %}
-
+<html>
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math with Conversions</span>
@@ -63,19 +63,20 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td>2**2 = 4</td>
-            <td>2**1 = 2</td>
-            <td>2**0 = 1</td>
+            <td><script>2**2 = 4</script></td>
+            <td><script>2**1 = 2</script></td>
+            <td><script>2**0 = 1</script></td>
             </tr>
             <tr>
-            <td>4 * int(input)</td>
-            <td>2 * int(input)</td>
-            <td>1 * int(input)</td>
+            <td><script>4 * int(input)</script></td>
+            <td><script>2 * int(input)</script></td>
+            <td><script>1 * int(input)</script></td>
             </tr>
             </table>
         </div>
     </div>
 </div>
+</html>
 
 <script>
     const BITS = {{ BITS }};

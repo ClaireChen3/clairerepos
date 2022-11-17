@@ -63,9 +63,14 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td>4</td>
-            <td>2</td>
-            <td>1</td>
+            <td>2**2 = 4</td>
+            <td>2**1 = 2</td>
+            <td>2**0 = 1</td>
+            </tr>
+            <tr>
+            <td>4 * int(input)</td>
+            <td>2 * int(input)</td>
+            <td>1 * int(input)</td>
             </tr>
             </table>
         </div>

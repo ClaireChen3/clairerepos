@@ -63,9 +63,9 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td><script>2**2 = 4</script></td>
-            <td><script>2**1 = 2</script></td>
-            <td><script>2**0 = 1</script></td>
+            <td>2^2= 4</td>
+            <td>2^1= 2 </td>
+            <td>2^0= 1</td>
             </tr>
             <tr>
             <td><script>4 * int(i)</script></td>

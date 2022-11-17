@@ -68,9 +68,9 @@ type: pbl
             <td>2^0= 1</td>
             </tr>
             <tr>
-            <td><script>4 * Value</script></td>
-            <td><script>2 * Value</script></td>
-            <td><script>1 * Value</script></td>
+            <td><script>4 * VALUE</script></td>
+            <td><script>2 * VALUE</script></td>
+            <td><script>1 * VALUE</script></td>
             </tr>
             </table>
         </div>
@@ -85,7 +85,7 @@ type: pbl
     const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
-
+    const VALUE = i
     // return string with current value of each bit
     function getBits() {
         let bits = "";

@@ -68,9 +68,9 @@ type: pbl
             <td><script>2**0 = 1</script></td>
             </tr>
             <tr>
-            <td><script>4 * int(input)</script></td>
-            <td><script>2 * int(input)</script></td>
-            <td><script>1 * int(input)</script></td>
+            <td><script>4 * int(i)</script></td>
+            <td><script>2 * int(i)</script></td>
+            <td><script>1 * int(i)</script></td>
             </tr>
             </table>
         </div>

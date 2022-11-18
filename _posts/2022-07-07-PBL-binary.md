@@ -159,10 +159,10 @@ type: pbl
                 ret.value = 2 ** a;
             }
             totaldec += ret.value; 
-            trout += "<td>" + 2 ** a + "</td>"; 
+            //trout += "<td>" + 2 ** a + "</td>"; 
         }
         document.getElementById('totaldec').innerHTML=totaldec;
-        document.getElementById('displaynum').innerHTML=trout;
+        //document.getElementById('displaynum').innerHTML=trout;
     }
     function add(n) {
         let binary = getBits();

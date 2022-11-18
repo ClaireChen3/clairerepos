@@ -68,9 +68,9 @@ type: pbl
             <td>2^0= 1</td>
             </tr>
             <tr>
-            <td><script>4 * 2</script></td>
-            <td><script>2 * 2</script></td>
-            <td><script>1 * 2</script></td>
+            <td>4 * 2</td>
+            <td>2 * 2</td>
+            <td>1 * 2</td>
             </tr>
             </table>
         </div>

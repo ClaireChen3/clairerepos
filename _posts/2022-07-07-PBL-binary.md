@@ -123,7 +123,7 @@ type: pbl
 
     // toggle selected bit and recalculate
     function toggleBit(i) {
-        //alert("Digit action: " + i );
+        alert("Digit action: " + i );
         const dig = document.getElementById('digit' + i);
         const image = document.getElementById('bulb' + i);
         const butt = document.getElementById('butt' + i);
@@ -140,6 +140,7 @@ type: pbl
         // Binary numbers
         const binary = getBits();
         setConversions(binary);
+       // alert(i)
     }
     // add is positive integer, subtract is negative integer
     function add(n) {

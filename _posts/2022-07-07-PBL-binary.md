@@ -168,4 +168,12 @@ type: pbl
         }
         }
     }
+     function oneMultiply() {
+        if (dig.value = 1) {
+            console.log (4 * 1);
+        }
+        else {
+            console.log (4 * 0);
+        }
+    }
 </script>

@@ -156,7 +156,7 @@ type: pbl
             } else {
                 ret.value = 2 ** a;
             }
-            //totaldec += parsInt(ret.value); 
+            totaldec += parsInt(ret.value); 
             //trout += "<td>" + 2 ** a + "</td>"; 
         }
         const tot = document.getElementById('totalval');

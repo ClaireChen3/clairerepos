@@ -159,13 +159,14 @@ type: pbl
                 ret.value = 2 ** a;
             }
             stroutput=2**a +"x"+dig.value+"="+ret.value;
-            alert(stroutput);
+            //alert(stroutput);
             str.innerHTML=stroutput;
 
             //alert("return="+ret.value);
             //alert("parse="+parseInt(ret.value));
-            //alert("total="+totaldec);
-            //totaldec += parseInt(ret.value); 
+            totaldec += parseInt(ret.value); 
+            alert("total="+totaldec);
+            
             //trout += "<td>" + 2 ** a + "</td>"; 
         }
         

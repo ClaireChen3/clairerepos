@@ -165,13 +165,13 @@ type: pbl
             //alert("return="+ret.value);
             //alert("parse="+parseInt(ret.value));
             totaldec += parseInt(ret.value); 
-            alert("total="+totaldec);
+            //alert("total="+totaldec);
             
             //trout += "<td>" + 2 ** a + "</td>"; 
         }
         
-        //const tot = document.getElementById('totalval');
-        //tot.value = totaldec;
+        const tot = document.getElementById('totalval');
+        tot.value = totaldec;
         //document.getElementById('totalval').value=totaldec;
         //document.getElementById('displaynum').innerHTML=trout;
     }

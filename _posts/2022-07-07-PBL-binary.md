@@ -65,7 +65,7 @@ type: pbl
             <tr>
                 {% comment %}Value of bit{% endcomment %}
                 {% for i in (0..bits) %}
-                <td><input type='text' id="result{{ i }}" Value="0" size="1" readonly><div id='strdiv'></div></td>
+                <td><input type='text' id="result{{ i }}" Value="0" size="1" readonly><div id="strdiv{{ i }}"></div></td>
                 {% endfor %}
             </tr>
             <tr>

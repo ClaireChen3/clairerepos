@@ -142,9 +142,21 @@ type: pbl
         const binary = getBits();
         setConversions(binary);
         alert(i);
-        ret.value = 2 ** i;
+        cal();
     }
     // add is positive integer, subtract is negative integer
+    function cal() {
+        for (let i = 0; i <= 2; i++){
+            a = abs (i - 2);
+            const dig = document.getElementById('digit' + i);
+            const ret = document.getElementById('result' + i); 
+            if (dig.value == 0) {
+                ret.value = 0;
+            } else {
+                ret.value = 2 ** a;
+            }   
+        }
+    }
     function add(n) {
         let binary = getBits();
         // convert to decimal and do math
@@ -170,6 +182,7 @@ type: pbl
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
         }
+        cal();
     }
      function oneMultiply() {
         if (dig.value = 1) {

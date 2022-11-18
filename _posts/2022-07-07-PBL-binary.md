@@ -142,12 +142,14 @@ type: pbl
         setConversions(binary);
         cal();
     }
+
     // add is positive integer, subtract is negative integer
     function cal() {
         //alert("start");
         let totaldec=0;
         for (let i = 0; i < 3; i++){
             //alert("i="+i);
+            //
             a = Math.abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
@@ -159,25 +161,22 @@ type: pbl
                 ret.value = 2 ** a;
             }
             stroutput=2**a +"x"+dig.value+"="+ret.value;
-            //alert(stroutput);
+            //move to div string
             str.innerHTML=stroutput;
 
-            //alert("return="+ret.value);
-            //alert("parse="+parseInt(ret.value));
+            //add up values for total, need parseInt to get the value (int)
             totaldec += parseInt(ret.value); 
-            //alert("total="+totaldec);
             
-            //trout += "<td>" + 2 ** a + "</td>"; 
         }
-        
-        const tot = document.getElementById('totalval');
-        tot.value = totaldec;
-        //document.getElementById('totalval').value=totaldec;
+        //assign total value to div
+        document.getElementById('totalval').value = totaldec;
+        //make the equation string
         eq=document.getElementById('result0').value +"+"+document.getElementById('result1').value +"+"+document.getElementById('result2').value+"="+totaldec;
+        //assign to div
         document.getElementById('equationdiv').innerHTML=eq;
-        
+        }
 
-    }
+
     function add(n) {
         let binary = getBits();
         // convert to decimal and do math

@@ -135,11 +135,11 @@ window.onload = wrap_img;
             <tr>
                 
                 
-                <td><input type="text" id="result0" value="0" size="1" readonly="" /></td>
+                <td><input type="text" id="result0" value="0" size="1" readonly="" /><div id="strdiv"></div></td>
                 
-                <td><input type="text" id="result1" value="0" size="1" readonly="" /></td>
+                <td><input type="text" id="result1" value="0" size="1" readonly="" /><div id="strdiv"></div></td>
                 
-                <td><input type="text" id="result2" value="0" size="1" readonly="" /></td>
+                <td><input type="text" id="result2" value="0" size="1" readonly="" /><div id="strdiv"></div></td>
                 
             </tr>
             <tr>
@@ -225,12 +225,15 @@ window.onload = wrap_img;
             a = Math.abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
+            const str = document.getElementById('strdiv' + i); 
             //alert("dig-value:"+dig.value);
             if (dig.value == 0) {
                 ret.value = 0;
             } else {
                 ret.value = 2 ** a;
             }
+            str.value=2**a +"x"+dig.value="="+ret.value;
+
             //alert("return="+ret.value);
             //alert("parse="+parseInt(ret.value));
             //alert("total="+totaldec);

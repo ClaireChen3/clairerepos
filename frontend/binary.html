@@ -133,6 +133,16 @@ window.onload = wrap_img;
                 
             </tr>
             <tr>
+                
+                
+                <td><input type="text" id="result0" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="result1" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="result2" value="0" size="1" readonly="" /></td>
+                
+            </tr>
+            <tr>
             <td>2^2= 4</td>
             <td>2^1= 2 </td>
             <td>2^0= 1</td>
@@ -193,10 +203,11 @@ window.onload = wrap_img;
 
     // toggle selected bit and recalculate
     function toggleBit(i) {
-        alert("Digit action: " + i );
+       // alert("Digit action: " + i );
         const dig = document.getElementById('digit' + i);
         const image = document.getElementById('bulb' + i);
         const butt = document.getElementById('butt' + i);
+        const ret = document.getElementById('result' + i);
         // Change digit and visual
         if (image.src.match(IMAGE_ON)) {
         dig.value = 0;
@@ -210,7 +221,8 @@ window.onload = wrap_img;
         // Binary numbers
         const binary = getBits();
         setConversions(binary);
-       // alert(i)
+        alert(i);
+        ret.value = 2 ** i;
     }
     // add is positive integer, subtract is negative integer
     function add(n) {

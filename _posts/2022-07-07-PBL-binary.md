@@ -158,7 +158,9 @@ type: pbl
             } else {
                 ret.value = 2 ** a;
             }
-            str.value=2**a +"x"+dig.value="="+ret.value;
+            stroutput=2**a +"x"+dig.value="="+ret.value;
+            alert(stroutput);
+            str.innerHTML=stroutput;
 
             //alert("return="+ret.value);
             //alert("parse="+parseInt(ret.value));

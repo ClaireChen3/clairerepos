@@ -65,7 +65,7 @@ type: pbl
             <tr>
                 {% comment %}Value of bit{% endcomment %}
                 {% for i in (0..bits) %}
-                <td><input type='text' id="result{{ i }}" Value="0" size="1" readonly></td>
+                <td><input type='text' id="result{{ i }}" Value="0" size="1" readonly><div id='strdiv'></div></td>
                 {% endfor %}
             </tr>
             <tr>
@@ -151,12 +151,15 @@ type: pbl
             a = Math.abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
+            const str = document.getElementById('strdiv' + i); 
             //alert("dig-value:"+dig.value);
             if (dig.value == 0) {
                 ret.value = 0;
             } else {
                 ret.value = 2 ** a;
             }
+            str.value=2**a +"x"+dig.value="="+ret.value;
+
             //alert("return="+ret.value);
             //alert("parse="+parseInt(ret.value));
             //alert("total="+totaldec);

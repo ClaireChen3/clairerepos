@@ -68,7 +68,7 @@ type: pbl
             <td>2^0= 1</td>
             </tr>
             <tr>
-            <td>4 * 2 <button type="button" id="multiply" onclick="(oneMultiply)"></button></td>
+            <td>4 * 2 <button type="button" id="multiply" onclick="(oneMultiply)">answer</button></td>
             <td>2 * 2</td>
             <td>1 * 2</td>
             </tr>
@@ -170,7 +170,10 @@ type: pbl
         }
     }
     function oneMultiply {
-        if (src = IMAGE_OFF) && (innerHTML = MSG_ON);
+        if (dig.value = 1) {
             console.log (4 * 1)
+        }
+        else {
+            console.log (4 * 0)
     }
     </script>

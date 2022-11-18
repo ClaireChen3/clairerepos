@@ -220,10 +220,13 @@ window.onload = wrap_img;
     }
     // add is positive integer, subtract is negative integer
     function cal() {
-        for (let i = 0; i <= 2; i++){
+        alert("start");
+        for (let i = 0; i < 3; i++){
+            alert("i="+i);
             a = abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
+            alert("dig-value:"+dig.value);
             if (dig.value == 0) {
                 ret.value = 0;
             } else {

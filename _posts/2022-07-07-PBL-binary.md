@@ -69,7 +69,7 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td><input type='text' id="totalval" Value="0" size="1" readonly></td>
+            <td><input type='text' id="totalval" Value="0" size="1" readonly><div id="equationdiv"></div></td>
             </tr>
             </table>
         </div>
@@ -158,22 +158,19 @@ type: pbl
             } else {
                 ret.value = 2 ** a;
             }
-            stroutput=2**a +"x"+dig.value+"="+ret.value;
-            //alert(stroutput);
-            str.innerHTML=stroutput;
-
-            //alert("return="+ret.value);
-            //alert("parse="+parseInt(ret.value));
-            totaldec += parseInt(ret.value); 
-            //alert("total="+totaldec);
             
-            //trout += "<td>" + 2 ** a + "</td>"; 
+            str.innerHTML=stroutput;
+            stroutput=2**a +"x"+dig.value+"="+ret.value;
+
+            totaldec += parseInt(ret.value); 
         }
         
         const tot = document.getElementById('totalval');
         tot.value = totaldec;
-        //document.getElementById('totalval').value=totaldec;
-        //document.getElementById('displaynum').innerHTML=trout;
+
+        document.getElementById('equationdiv').innerHTML=eq;
+        eq=document.getElementById('result2')+"+"+document.getElementById('result1')+"+"+document.getElementById('result0')+"="+totaldec;
+        
     }
     function add(n) {
         let binary = getBits();

@@ -85,7 +85,6 @@ type: pbl
     const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
-    const VALUE = i
     // return string with current value of each bit
     function getBits() {
         let bits = "";
@@ -171,10 +170,10 @@ type: pbl
     }
     function oneMultiply {
         if (dig.value = 1) {
-            console.log (4 * 1)
+            console.log (4 * 1);
         }
         else {
-            console.log (4 * 0)
+            console.log (4 * 0);
         }
     }
 </script>

@@ -72,6 +72,7 @@ type: pbl
             <td>4</td>
             <td>2 </td>
             <td>1</td>
+            </tr>
             </table>
         </div>
     </div>
@@ -141,7 +142,6 @@ type: pbl
         // Binary numbers
         const binary = getBits();
         setConversions(binary);
-        alert(i);
         cal();
     }
     // add is positive integer, subtract is negative integer

@@ -149,7 +149,7 @@ type: pbl
         alert("start");
         for (let i = 0; i < 3; i++){
             alert("i="+i);
-            a = abs (i - 2);
+            a = Math.abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
             alert("dig-value:"+dig.value);

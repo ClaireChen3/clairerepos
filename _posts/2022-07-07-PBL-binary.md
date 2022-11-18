@@ -79,6 +79,7 @@ type: pbl
 </html>
 
 <script>
+    bits = 1
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
@@ -169,4 +170,6 @@ type: pbl
         }
         }
     }
+    function bitsMultiply
+    
 </script>

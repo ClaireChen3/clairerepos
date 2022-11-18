@@ -63,6 +63,12 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
+                {% comment %}Value of bit{% endcomment %}
+                {% for i in (0..bits) %}
+                <td><input type='text' id="result{{ i }}" Value="0" size="1" readonly></td>
+                {% endfor %}
+            </tr>
+            <tr>
             <td>2^2= 4</td>
             <td>2^1= 2 </td>
             <td>2^0= 1</td>
@@ -123,10 +129,11 @@ type: pbl
 
     // toggle selected bit and recalculate
     function toggleBit(i) {
-        alert("Digit action: " + i );
+       // alert("Digit action: " + i );
         const dig = document.getElementById('digit' + i);
         const image = document.getElementById('bulb' + i);
         const butt = document.getElementById('butt' + i);
+        const ret = document.getElementById('result' + i);
         // Change digit and visual
         if (image.src.match(IMAGE_ON)) {
         dig.value = 0;
@@ -140,7 +147,8 @@ type: pbl
         // Binary numbers
         const binary = getBits();
         setConversions(binary);
-       // alert(i)
+        alert(i);
+        ret.value = 2 ** i;
     }
     // add is positive integer, subtract is negative integer
     function add(n) {

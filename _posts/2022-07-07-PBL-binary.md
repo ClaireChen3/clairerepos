@@ -175,5 +175,6 @@ type: pbl
         }
         else {
             console.log (4 * 0)
+        }
     }
-    </script>
+</script>

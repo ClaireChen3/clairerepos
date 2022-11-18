@@ -67,10 +67,11 @@ type: pbl
             <td>2^1= 2 </td>
             <td>2^0= 1</td>
             </tr>
+            <var>1</var>
             <tr>
-            <td><script>4 * bits</script></td>
-            <td><script>2 * bits</script></td>
-            <td><script>1 * bits</script></td>
+            <td><script>4 * <var></var></script></td>
+            <td><script>2 * <var></var></script></td>
+            <td><script>1 * <var></var></script></td>
             </tr>
             </table>
         </div>
@@ -79,7 +80,6 @@ type: pbl
 </html>
 
 <script>
-    bits = 1
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";

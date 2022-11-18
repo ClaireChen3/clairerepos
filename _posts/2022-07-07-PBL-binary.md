@@ -69,9 +69,7 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td id="totaldec"></td>
-            </tr>
-            <tr id="displaynum">
+            <td><input type='text' id="totalval" Value="0" size="1" readonly></td>
             </tr>
             </table>
         </div>
@@ -158,10 +156,10 @@ type: pbl
             } else {
                 ret.value = 2 ** a;
             }
-            totaldec += ret.value; 
+            totaldec += parsInt(ret.value); 
             //trout += "<td>" + 2 ** a + "</td>"; 
         }
-        document.getElementById('totaldec').innerHTML=totaldec;
+        document.getElementById('totalval').value=totaldec;
         //document.getElementById('displaynum').innerHTML=trout;
     }
     function add(n) {

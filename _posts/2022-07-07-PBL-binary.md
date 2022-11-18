@@ -69,15 +69,9 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td>2^2= 4</td>
-            <td>2^1= 2 </td>
-            <td>2^0= 1</td>
-            </tr>
-            <tr>
-            <td>4 * 2 <button type="button" id="multiply" onclick="(oneMultiply)">answer</button></td>
-            <td>2 * 2</td>
-            <td>1 * 2</td>
-            </tr>
+            <td>4</td>
+            <td>2 </td>
+            <td>1</td>
             </table>
         </div>
     </div>

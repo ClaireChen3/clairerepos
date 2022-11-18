@@ -67,11 +67,10 @@ type: pbl
             <td>2^1= 2 </td>
             <td>2^0= 1</td>
             </tr>
-            <var>1</var>
             <tr>
-            <td><script>4 * <var></var></script></td>
-            <td><script>2 * <var></var></script></td>
-            <td><script>1 * <var></var></script></td>
+            <td><script>4 * 2</script></td>
+            <td><script>2 * 2</script></td>
+            <td><script>1 * 2</script></td>
             </tr>
             </table>
         </div>

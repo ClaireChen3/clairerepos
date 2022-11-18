@@ -69,9 +69,9 @@ type: pbl
                 {% endfor %}
             </tr>
             <tr>
-            <td>4</td>
-            <td>2 </td>
-            <td>1</td>
+            <td id="totaldec"></td>
+            </tr>
+            <tr id="displaynum">
             </tr>
             </table>
         </div>
@@ -146,19 +146,21 @@ type: pbl
     }
     // add is positive integer, subtract is negative integer
     function cal() {
-        alert("start");
+        //alert("start");
         for (let i = 0; i < 3; i++){
-            alert("i="+i);
+            //alert("i="+i);
             a = Math.abs (i - 2);
             const dig = document.getElementById('digit' + i);
             const ret = document.getElementById('result' + i); 
-            alert("dig-value:"+dig.value);
+            //alert("dig-value:"+dig.value);
             if (dig.value == 0) {
                 ret.value = 0;
             } else {
                 ret.value = 2 ** a;
-            }   
+            }
+            totaldec+=ret.value;   
         }
+        document.getElementById('totaldec').innerHTML=totaldec;
     }
     function add(n) {
         let binary = getBits();

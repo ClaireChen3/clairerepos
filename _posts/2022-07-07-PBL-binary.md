@@ -156,9 +156,13 @@ type: pbl
             } else {
                 ret.value = 2 ** a;
             }
+            alert("return="+ret.value);
+            alert("parse="+parseInt(ret.value));
+            alert("total="+totaldec);
             totaldec += parseInt(ret.value); 
             //trout += "<td>" + 2 ** a + "</td>"; 
         }
+        
         const tot = document.getElementById('totalval');
         tot.value = totaldec;
         //document.getElementById('totalval').value=totaldec;

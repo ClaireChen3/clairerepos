@@ -169,6 +169,4 @@ type: pbl
         }
         }
     }
-    function bitsMultiply
-    
 </script>

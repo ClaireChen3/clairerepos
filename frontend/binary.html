@@ -247,9 +247,7 @@ window.onload = wrap_img;
         const tot = document.getElementById('totalval');
         tot.value = totaldec;
         //document.getElementById('totalval').value=totaldec;
-        alert(totaldec);
-        eq=document.getElementById('result2')+"+"+document.getElementById('result1')+"+"+document.getElementById('result0')+"="+totaldec;
-        alert(eq);
+        eq=document.getElementById('result2').value +"+"+document.getElementById('result1').value +"+"+document.getElementById('result0').value+"="+totaldec;
         document.getElementById('equationdiv').innerHTML=eq;
         
 

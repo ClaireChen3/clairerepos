@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Title",
             "content": "Hack 1 . Sequencing: . set item to number to search for | get next number in the list | if number = item, display &quot;item found&quot; | if there are more numbers in the list, go back to step 2 | display &quot;item not found&quot; Selection: | if number = item, display &quot;item found&quot; Iteration: | if there are more numbers in the list, go back to step 2 | Hack 2 . num1 = 5 num2 = num1 3 num3 = num2 / num1 (9 % 2) 4 result = (num3 % num1 + num2) % num3 3 / 5 . 5 | 5*3= 15 | 15/5=3 1=34=12 | 12/5 +15=17 % 12 = 5*3 = 15/5 = 3 | Crossword . 1 down - iteration 2 down - selection 3 across - sequence .",
-            "url": "https://clairechen3.github.io/clairerepos/2022/11/29/3.3&3.4.html",
-            "relUrl": "/2022/11/29/3.3&3.4.html",
+            "url": "https://clairechen3.github.io/clairerepos/2022/11/29/33-34.html",
+            "relUrl": "/2022/11/29/33-34.html",
             "date": " • Nov 29, 2022"
         }
         

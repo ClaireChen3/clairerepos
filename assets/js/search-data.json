@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Unit 3 Notes",
-            "content": "3.1-3.2 . for your variables, use easy to understand words tha relates to the function/value you are assigning to it | this makes it easier for both the user and other people using/reading the code. | Datatypes: stores different types of data: sentences, numbers, tru or false | string | integers | boolean | you can use lists instead of assigning multiple variables and stringing them together to shorten your code and make it more efficient | . 3.3-3.4 . - .",
+            "content": "3.1-3.2 . for your variables, use easy to understand words tha relates to the function/value you are assigning to it | this makes it easier for both the user and other people using/reading the code. | Datatypes: stores different types of data: sentences, numbers, tru or false | string | integers | boolean | you can use lists instead of assigning multiple variables and stringing them together to shorten your code and make it more efficient | . 3.3-3.4 . sequencing is the order of how to do something (like a set of instructions) | selection is a decision based off of if a certain requirement is met | iteration is a loop to do something over and over again until a certain condition is met | algorithms are a combination of all of these things | arithmetic operators add/ subtract | multiply/ divide | mod (divide remainder) | . | .",
             "url": "https://clairechen3.github.io/clairerepos/uit%203%20lessons/2022/11/28/Unit3Notes.html",
             "relUrl": "/uit%203%20lessons/2022/11/28/Unit3Notes.html",
             "date": " • Nov 28, 2022"
@@ -68,10 +68,10 @@
   
     
         ,"post6": {
-            "title": "Algorithm College Board Notes",
-            "content": "3.9 Video 1 . What I need to cover in this lesson: . Algorithms can be written in different ways and still do the same thing | However, Algorithms that look similar might not always have the same result | Different algorithms can be used to solve the same problem | Some conditional statements can be written as equivalent boolean expressions | . something as minor as writing a &gt; instead of a &gt;= can change the result of an entire algorithm (differentiate 2 algorithms) create two algorithms that look similar but display different results for example | assign fixing one of the algorithms to have both results be the same for homework | . | if else conditionals can be replaced by boolean expression create an if else statement and two boolean expressions to go with it (one that has the same result as the if else statement and one that doesn&#39;t) | assigning blogging about which boolean expression can replace the if then statement and why | . | explain how being able to spot these differences in algorithms will be important to us assign blogging about how they will use knowledge about algorithms to work on team projects in the future | . | .",
-            "url": "https://clairechen3.github.io/clairerepos/markdown/week%2013/2022/11/17/AlgorithmNotes.html",
-            "relUrl": "/markdown/week%2013/2022/11/17/AlgorithmNotes.html",
+            "title": "Tri 2 Cumulative Notes",
+            "content": "meta data . ex. name of a person | meta means: kind of, sort of, like | data about the data | front matter (title description) | . liquid code . in html | on csp exam all indices start with 1 | . pre processing step in actions before goes into browser to generate liquid to html code .",
+            "url": "https://clairechen3.github.io/clairerepos/markdown/week%2013/2022/11/17/CumulativeNotes.html",
+            "relUrl": "/markdown/week%2013/2022/11/17/CumulativeNotes.html",
             "date": " • Nov 17, 2022"
         }
         
@@ -79,10 +79,10 @@
   
     
         ,"post7": {
-            "title": "Tri 2 Cumulative Notes",
-            "content": "meta data . ex. name of a person | meta means: kind of, sort of, like | data about the data | front matter (title description) | . liquid code . in html | on csp exam all indices start with 1 | . pre processing step in actions before goes into browser to generate liquid to html code .",
-            "url": "https://clairechen3.github.io/clairerepos/markdown/week%2013/2022/11/17/A.html",
-            "relUrl": "/markdown/week%2013/2022/11/17/A.html",
+            "title": "Algorithm College Board Notes",
+            "content": "3.9 Video 1 . What I need to cover in this lesson: . Algorithms can be written in different ways and still do the same thing | However, Algorithms that look similar might not always have the same result | Different algorithms can be used to solve the same problem | Some conditional statements can be written as equivalent boolean expressions | . something as minor as writing a &gt; instead of a &gt;= can change the result of an entire algorithm (differentiate 2 algorithms) create two algorithms that look similar but display different results for example | assign fixing one of the algorithms to have both results be the same for homework | . | if else conditionals can be replaced by boolean expression create an if else statement and two boolean expressions to go with it (one that has the same result as the if else statement and one that doesn&#39;t) | assigning blogging about which boolean expression can replace the if then statement and why | . | explain how being able to spot these differences in algorithms will be important to us assign blogging about how they will use knowledge about algorithms to work on team projects in the future | . | .",
+            "url": "https://clairechen3.github.io/clairerepos/markdown/week%2013/2022/11/17/AlgorithmNotes.html",
+            "relUrl": "/markdown/week%2013/2022/11/17/AlgorithmNotes.html",
             "date": " • Nov 17, 2022"
         }
         

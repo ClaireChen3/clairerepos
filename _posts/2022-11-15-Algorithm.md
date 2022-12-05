@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: Algorithm Examples
+title: Algorithms
 toc: true 
 badges: true
 comments: true 
@@ -18,6 +18,12 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="A-little-review-on-Algorithms:">A little review on Algorithms:<a class="anchor-link" href="#A-little-review-on-Algorithms:"> </a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The goal with the two algorithms below is to show "Wow! Good job!" when you get an A and show "Nice!" when you get a B or C (pass), if you don't pass (lower than 70) it will show "Do Better"</p>
@@ -158,6 +164,30 @@ Do Better
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Hacks:">Hacks:<a class="anchor-link" href="#Hacks:"> </a></h4><p>Make your own version of this!
+<br>requirements:</p>
+<ul>
+<li>main goal of algorithm </li>
+<li>main/base algorithm (ideal algorithm)</li>
+<li>an algorithm that visual looks like the first one but is flawed, has a different result, or both<ul>
+<li>explain the flaw either in notes of your code or in a markdown</li>
+</ul>
+</li>
+<li>an algorithm that looks very different from first algorithm but has some result/ solves the same problem<ul>
+<li>explanation/ comparison of this algorithm with the first one</li>
+</ul>
+</li>
+</ul>
+<p><br>The Algorithms don't have to be super complicated! But it should be complex enough to show a good understanding of this lesson as well as previous ones</p>
+<h4 id="Extra-things-to-add-to-notes:)">Extra things to add to notes:)<a class="anchor-link" href="#Extra-things-to-add-to-notes:)"> </a></h4><ul>
+<li>why having this understanding of algorithms is important to you as a coder</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 

@@ -20,7 +20,37 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-little-review-on-Algorithms:">A little review on Algorithms:<a class="anchor-link" href="#A-little-review-on-Algorithms:"> </a></h2>
+<h4 id="A-little-review-on-Algorithms:">A little review on Algorithms:<a class="anchor-link" href="#A-little-review-on-Algorithms:"> </a></h4><p>what are the three components of an algorithm?</p>
+<ul>
+<li>sel<strong>__</strong></li>
+<li>seq<strong>__</strong></li>
+<li>it<strong>___</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Today we will be looking at algorithms from another standpoint.
+<br>Q: How many ways are there to peel a banana? Is the result the same?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Main-Idea-1:">Main Idea 1:<a class="anchor-link" href="#Main-Idea-1:"> </a></h3><h4 id="Algorithms-can-be-written-in-different-ways-and-still-do-the-same-thing">Algorithms can be written in different ways and still do the same thing<a class="anchor-link" href="#Algorithms-can-be-written-in-different-ways-and-still-do-the-same-thing"> </a></h4><ul>
+<li>However, Algorithms that look similar might not always have the same result</li>
+<li>Different algorithms can be used to solve the same problem</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Examples!">Examples!<a class="anchor-link" href="#Examples!"> </a></h3>
 </div>
 </div>
 </div>
@@ -117,6 +147,25 @@ Nice!
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="So,-why-is-this-important?-Why-are-we-even-doing-this?">So, why is this important? Why are we even doing this?<a class="anchor-link" href="#So,-why-is-this-important?-Why-are-we-even-doing-this?"> </a></h4><p>when 2 algorithms look extremely similar, it is easy to assume they do the same thing. However, that is not the case and we have learn how to notice small differences in code and pretty much debug.
+<br>- just know that codes that look similar don't always produce the same things:)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Real-life-situation-(Storytime)">Real-life situation (Storytime)<a class="anchor-link" href="#Real-life-situation-(Storytime)"> </a></h4><p>Tommy and Billy are working on solving the same issue with an algorithm<br>
+Tommy creates a functioning code and yells "I did it!"<br>
+He looks over at his friend Billy which is having a bit of trouble and he offers help<br>
+However, Billy's code looks basically the same! which confuses them<br>
+Then they remeber that they were taught that algorithms that look similar don't always have the same results and they collaborate to do further investigation:)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, without running, investigate the algorithm below. This one looks different. Do you thing it will still achieve the same goal as above?</p>
 
 </div>
@@ -166,6 +215,18 @@ Do Better
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Why is this important?<br>
+When collaborating or working on group projects, two people might come up with two different ways to solve a problem, and that happens a lot.</p>
+<ul>
+<li>know that same goal can be achieved in many ways (the possibilities are endless)</li>
+<li>make notes in you code! (explain how it works to others or you future self)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Hacks:">Hacks:<a class="anchor-link" href="#Hacks:"> </a></h4><p>Make your own version of this!
 <br>requirements:</p>
 <ul>
@@ -182,7 +243,10 @@ Do Better
 </ul>
 <p><br>The Algorithms don't have to be super complicated! But it should be complex enough to show a good understanding of this lesson as well as previous ones</p>
 <h4 id="Extra-things-to-add-to-notes:)">Extra things to add to notes:)<a class="anchor-link" href="#Extra-things-to-add-to-notes:)"> </a></h4><ul>
-<li>why having this understanding of algorithms is important to you as a coder</li>
+<li>why having this understanding of algorithms is important to you as a coder<ul>
+<li>making up stories can help</li>
+</ul>
+</li>
 </ul>
 
 </div>

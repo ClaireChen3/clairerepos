@@ -37,7 +37,6 @@ baseurl: "/clairerepos" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  skin: dark
   #  social_links:
   #    twitter: NighthawkCoding
   #    github: nighthawkcoders

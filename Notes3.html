@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 3 Notes | Claire Chen</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 3 Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="this is Claire Chen’s blog for APCSP" />
+<meta property="og:description" content="this is Claire Chen’s blog for APCSP" />
+<link rel="canonical" href="https://clairechen3.github.io/clairerepos/Notes3" />
+<meta property="og:url" content="https://clairechen3.github.io/clairerepos/Notes3" />
+<meta property="og:site_name" content="Claire Chen" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-08T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 3 Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-08T00:00:00-06:00","datePublished":"2022-12-08T00:00:00-06:00","description":"this is Claire Chen’s blog for APCSP","headline":"Unit 3 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairechen3.github.io/clairerepos/Notes3"},"url":"https://clairechen3.github.io/clairerepos/Notes3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/clairerepos/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairechen3.github.io/clairerepos/feed.xml" title="Claire Chen" /><link rel="shortcut icon" type="image/x-icon" href="/clairerepos/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/clairerepos/">Claire Chen</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/clairerepos/_pages/2022-08-22-Markdown.html">Claire&#39;s Markdown Post</a><a class="page-link" href="/clairerepos/_pages/2022-08-26-Jupyter.html">Claire&#39;s Jupyter Notebook</a><a class="page-link" href="/clairerepos/_pages/2022-08-29-Vocab.html">Vocab</a><a class="page-link" href="/clairerepos/Class%20Progress">Class Progress</a><a class="page-link" href="/clairerepos/_pages/2022-09-26-Submenu.html">Submenu</a><a class="page-link" href="/clairerepos/about/">About Me</a><a class="page-link" href="/clairerepos/search/">Search</a><a class="page-link" href="/clairerepos/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-08T00:00:00-06:00" itemprop="datePublished">
+        Dec 8, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/ClaireChen3/clairerepos/tree/master/_notebooks/2022-12-8-Unit3Notes.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/clairerepos/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/ClaireChen3/clairerepos/master?filepath=_notebooks%2F2022-12-8-Unit3Notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/ClaireChen3/clairerepos/blob/master/_notebooks/2022-12-8-Unit3Notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FClaireChen3%2Fclairerepos%2Fblob%2Fmaster%2F_notebooks%2F2022-12-8-Unit3Notes.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/clairerepos/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#1-2">1-2 </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Variables">Variables </a></li>
+<li class="toc-entry toc-h4"><a href="#Strings-and-Lists">Strings and Lists </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#3-4">3-4 </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Algorithms">Algorithms </a>
+<ul>
+<li class="toc-entry toc-h5"><a href="#Sequence">Sequence </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h4"><a href="#Arithmetic-Operators">Arithmetic Operators </a></li>
+<li class="toc-entry toc-h4"><a href="#Strings">Strings </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#5-7">5-7 </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Conditionals">Conditionals </a></li>
+<li class="toc-entry toc-h4"><a href="#Nested-Conditionals">Nested Conditionals </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#8-10">8-10 </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#difference-between-for-and-while-loops">difference between for and while loops </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#12-13">12-13 </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#how-to-call-a-function">how to call a function </a></li>
+<li class="toc-entry toc-h4"><a href="#the-return-statemnt">the return statemnt </a></li>
+<li class="toc-entry toc-h4"><a href="#Vocab">Vocab </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-8-Unit3Notes.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1-2">
+<a class="anchor" href="#1-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>1-2<a class="anchor-link" href="#1-2"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Variables">
+<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
+</h4>
+<ul>
+<li>Variables are containers that hold a certain value/ data</li>
+<li>there are different datatypes that a variable can store<ul>
+<li>string (text/ letters)</li>
+<li>int (number)</li>
+<li>boolean (true false)</li>
+</ul>
+</li>
+<li>to assign a value to a variable, you use an assignment operator which is (=)<ul>
+<li>-&gt; in pseudocode</li>
+</ul>
+</li>
+<li>variables should align with the data that it stores</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"claire"</span>
+<span class="c1"># can print just the variable instead of the whole name</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="c1"># this datatype is string so you need ""</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>claire
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1"># ints don't need ""</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Strings-and-Lists">
+<a class="anchor" href="#Strings-and-Lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings and Lists<a class="anchor-link" href="#Strings-and-Lists"> </a>
+</h4>
+<ul>
+<li>strings can be a series of words or numbers (including phone numbers)</li>
+<li>lists store a series of variables, words, or numbers</li>
+<li>syntax: square brakets</li>
+<li>easier than assigning variable to each value</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name1</span> <span class="o">=</span> <span class="s2">"claire"</span>
+<span class="n">name2</span> <span class="o">=</span> <span class="s2">"claire"</span>
+<span class="n">name3</span> <span class="o">=</span> <span class="s2">"grace"</span>
+<span class="n">name4</span> <span class="o">=</span> <span class="s2">"annika"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="n">name2</span><span class="p">,</span> <span class="n">name3</span><span class="p">,</span> <span class="n">name4</span><span class="p">)</span>
+
+<span class="c1"># yes</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"claire"</span><span class="p">,</span> <span class="s2">"claire"</span><span class="p">,</span> <span class="s2">"grace"</span><span class="p">,</span> <span class="s2">"annika"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>claire claire grace annika
+['claire', 'claire', 'grace', 'annika']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3-4">
+<a class="anchor" href="#3-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-4<a class="anchor-link" href="#3-4"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Algorithms">
+<a class="anchor" href="#Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithms<a class="anchor-link" href="#Algorithms"> </a>
+</h4>
+<ul>
+<li>set of instructions to do certain tasks</li>
+<li>parts of an algorithm<ul>
+<li>sequence (order)</li>
+<li>selection (decision dependant on condition)</li>
+<li>iteration (loop until condition is met)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Sequence">
+<a class="anchor" href="#Sequence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequence<a class="anchor-link" href="#Sequence"> </a>
+</h5>
+<ul>
+<li>step 1</li>
+<li>step 2</li>
+<li>step 3
+##### Selection</li>
+<li>if this is right, then do this</li>
+<li>otherwise, do that
+##### Iteration</li>
+<li>repeat this step until you get this</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Arithmetic-Operators">
+<a class="anchor" href="#Arithmetic-Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arithmetic Operators<a class="anchor-link" href="#Arithmetic-Operators"> </a>
+</h4>
+<ul>
+<li>add</li>
+<li>subtract</li>
+<li>multiply</li>
+<li>divide</li>
+<li>mod (remainder)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Answer</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Answer</span><span class="p">)</span>
+<span class="c1"># 1/1 has no remainder</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Strings">
+<a class="anchor" href="#Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings<a class="anchor-link" href="#Strings"> </a>
+</h4>
+<ul>
+<li>len (string)</li>
+<li>concat (str1, str2)</li>
+<li>substring (str1, str2, length)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s2">"claire"</span><span class="p">)</span>
+<span class="c1"># print the number of letters</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>6</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">"ClaireChen"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
+<span class="c1"># prints 2nd to 6th letter</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>aire
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="5-7">
+<a class="anchor" href="#5-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>5-7<a class="anchor-link" href="#5-7"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Boolean (true false)</li>
+<li>rational operators<ul>
+<li>equal to</li>
+<li>greater than</li>
+<li>less than</li>
+</ul>
+</li>
+<li>logical operators<ul>
+<li>not (opposite)</li>
+<li>and (if both apply)</li>
+<li>or (if either apply)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isRaining</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># if it is not raining</span>
+<span class="n">result</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="n">isRaining</span><span class="p">)</span>
+<span class="c1"># the result is the opposite of raining (is not raining)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grade</span> <span class="o">=</span> <span class="mi">95</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;</span> <span class="mi">70</span> <span class="ow">and</span> <span class="n">grade</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"passed"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>passed
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flower</span> <span class="o">=</span> <span class="s2">"red"</span>
+<span class="k">if</span> <span class="n">flower</span> <span class="o">==</span> <span class="s2">"red"</span> <span class="ow">or</span> <span class="s2">"green"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"red or green flower"</span><span class="p">)</span>
+<span class="c1"># either red or green</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>red or green flower
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Conditionals">
+<a class="anchor" href="#Conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditionals<a class="anchor-link" href="#Conditionals"> </a>
+</h4>
+<ul>
+<li>if</li>
+<li>then</li>
+<li>else if/ elif</li>
+<li>this is selection</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flower</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span> <span class="n">flower</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"flower"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">flower</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"bouquet"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>bouquet
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Nested-Conditionals">
+<a class="anchor" href="#Nested-Conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nested Conditionals<a class="anchor-link" href="#Nested-Conditionals"> </a>
+</h4>
+<ul>
+<li>conditionals within conditionals</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Have you watched criminal minds?"</span><span class="p">)</span>
+<span class="n">reply1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"yes or no?"</span><span class="p">)</span>
+<span class="c1"># first conditional</span>
+<span class="k">if</span> <span class="n">reply1</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+<span class="c1"># within the condition yes, you can enter your fav character</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Who's your favorite character"</span><span class="p">)</span>
+    <span class="n">reply2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"favorite character"</span><span class="p">)</span>
+<span class="c1"># if you enter Emily, it prints yay, othewise it prints oh</span>
+    <span class="k">if</span> <span class="n">reply2</span> <span class="o">==</span> <span class="s2">"Emily"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"yay"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"oh"</span><span class="p">)</span>
+<span class="c1"># from the first yes or no conditional, if you dont say yes, it prints you should</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"you should"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Have you watched criminal minds?
+Who's your favorite character
+yay
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="8-10">
+<a class="anchor" href="#8-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>8-10<a class="anchor-link" href="#8-10"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>Iteration: repeats a specified number of times or until a given condition is met</p>
+</li>
+<li>
+<p>Iteration Statements: repeats zero or more times, until a stopping condition is met</p>
+</li>
+<li>Traversing Lists: all elements in the list are accessed (can be partial or complete)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># starting from 0, if from one it would print 4 times</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
+<span class="c1"># print repeat 5 times</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"repeat"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>repeat
+repeat
+repeat
+repeat
+repeat
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+<span class="c1"># start from 1 up until 11, kind of like intervals in math</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="difference-between-for-and-while-loops">
+<a class="anchor" href="#difference-between-for-and-while-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>difference between for and while loops<a class="anchor-link" href="#difference-between-for-and-while-loops"> </a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>for loop is used when the number of iterations is known
+while loop is repeated until the statement in the program is proved wrong</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>list recap</p>
+<ul>
+<li>Append adds something to the list (at the end of the list)</li>
+<li>Insert adds something to the list (anywhere in the list)</li>
+<li>Removes whatever is at the index you put</li>
+<li>you can assign the values of a list to another list</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="12-13">
+<a class="anchor" href="#12-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>12-13<a class="anchor-link" href="#12-13"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Procedures: basically same as function</li>
+<li>Parameters are independent variables used in the procedure to produce a result. It allows a procedure to execute without initially knowing specific input values.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># kind of states the variables being used in the function</span>
+<span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">product</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">product</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The product of"</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s2">"times"</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">"is"</span><span class="p">,</span> <span class="n">answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="how-to-call-a-function">
+<a class="anchor" href="#how-to-call-a-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>how to call a function<a class="anchor-link" href="#how-to-call-a-function"> </a>
+</h4>
+<ul>
+<li>nameFunction(parameters)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1"># the function math is being called</span>
+<span class="c1"># the parameter is x</span>
+<span class="k">def</span> <span class="nf">math</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">op1</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">op2</span> <span class="o">=</span> <span class="n">op1</span> <span class="o">-</span> <span class="mi">9</span>
+    <span class="k">return</span> <span class="n">op2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="the-return-statemnt">
+<a class="anchor" href="#the-return-statemnt" aria-hidden="true"><span class="octicon octicon-link"></span></a>the return statemnt<a class="anchor-link" href="#the-return-statemnt"> </a>
+</h4>
+<ul>
+<li>A return statement ends the execution of a function, and returns control to the calling function</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># called function named divide</span>
+<span class="c1"># parameters are num1 and num2</span>
+<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="n">num1</span><span class="o">/</span><span class="n">num2</span>
+      <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h4>
+<ul>
+<li>Modularity - breaking a complex program into smaller, independent parts (modules) that can be used and reused in different parts of the program</li>
+<li>Abstraction - hiding the details of how a particular code or system works and exposing only the essential features or functions (make it look clean)</li>
+<li>Duplication - having multiple duplicate code blocks, often decreasing readability and efficiency (bad)</li>
+<li>Logic - the sequence of steps and operations that a computer follows to execute a program, including the specific instructions and decision-making processes built into the code</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this function squares numbers to avoid duplicates</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span>
+<span class="c1"># this function returns the square root of the sum of the two squared legs to find the hypotenuse</span>
+<span class="k">def</span> <span class="nf">hypotenuse_abstracted</span><span class="p">(</span><span class="n">leg1</span><span class="p">,</span> <span class="n">leg2</span><span class="p">):</span>
+    <span class="n">leg1_squared</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">leg1</span><span class="p">)</span>
+    <span class="n">leg2_squared</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">leg2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">leg1_squared</span> <span class="o">+</span> <span class="n">leg2_squared</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="ClaireChen3/clairerepos"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/clairerepos/Notes3" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/clairerepos/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/clairerepos/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/clairerepos/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>this is Claire Chen&#39;s blog for APCSP</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

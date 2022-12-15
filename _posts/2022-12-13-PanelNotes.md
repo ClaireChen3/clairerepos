@@ -4,7 +4,6 @@ title: Panel Notes Extra Credit
 toc: true 
 badges: true
 comments: true 
-categories: [Unit 3 Lessons]
 nb_path: _notebooks/2022-12-13-PanelNotes.ipynb
 layout: notebook
 ---
@@ -127,6 +126,19 @@ fixed computers installed routers</li>
 </ul>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Reflection">Reflection<a class="anchor-link" href="#Reflection"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I am interested in doing something in the business marketing field, similar to Kathyleen and I thought it was really nice how she was able to use her high tech background to help her get to such a high position in marketing. I also really like how Kris shared his experience with failing coding and not really taking any coding classes in college, but still being able to work hard and get into the tech field</p>
 
 </div>
 </div>

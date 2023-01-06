@@ -4,7 +4,7 @@ title: College Board Grading
 toc: true 
 badges: true
 comments: true 
-categories: [week 14]
+categories: [week 15]
 description: comparison of mine and CB grades to become familiar with CB rubric
 nb_path: _notebooks/2023-01-05-CBGrading.ipynb
 layout: notebook

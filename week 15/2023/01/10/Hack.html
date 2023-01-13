@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Class Hacks | Claire Chen</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Class Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="this is Claire Chen’s blog for APCSP" />
+<meta property="og:description" content="this is Claire Chen’s blog for APCSP" />
+<link rel="canonical" href="https://clairechen3.github.io/clairerepos/week%2015/2023/01/10/Hack.html" />
+<meta property="og:url" content="https://clairechen3.github.io/clairerepos/week%2015/2023/01/10/Hack.html" />
+<meta property="og:site_name" content="Claire Chen" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-10T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Class Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-10T00:00:00-06:00","datePublished":"2023-01-10T00:00:00-06:00","description":"this is Claire Chen’s blog for APCSP","headline":"Class Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairechen3.github.io/clairerepos/week%2015/2023/01/10/Hack.html"},"url":"https://clairechen3.github.io/clairerepos/week%2015/2023/01/10/Hack.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/clairerepos/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairechen3.github.io/clairerepos/feed.xml" title="Claire Chen" /><link rel="shortcut icon" type="image/x-icon" href="/clairerepos/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/clairerepos/">Claire Chen</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/clairerepos/_pages/2022-08-22-Markdown.html">Claire&#39;s Markdown Post</a><a class="page-link" href="/clairerepos/_pages/2022-08-26-Jupyter.html">Claire&#39;s Jupyter Notebook</a><a class="page-link" href="/clairerepos/_pages/2022-08-29-Vocab.html">Vocab</a><a class="page-link" href="/clairerepos/Class%20Progress">Class Progress</a><a class="page-link" href="/clairerepos/_pages/2022-09-26-Submenu.html">Submenu</a><a class="page-link" href="/clairerepos/about/">About Me</a><a class="page-link" href="/clairerepos/search/">Search</a><a class="page-link" href="/clairerepos/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Class Hacks</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-01-10T00:00:00-06:00" itemprop="datePublished">
+        Jan 10, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/clairerepos/categories/#week 15">week 15</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/ClaireChen3/clairerepos/tree/master/_notebooks/2023-01-10-Hack.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/clairerepos/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/ClaireChen3/clairerepos/master?filepath=_notebooks%2F2023-01-10-Hack.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/ClaireChen3/clairerepos/blob/master/_notebooks/2023-01-10-Hack.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FClaireChen3%2Fclairerepos%2Fblob%2Fmaster%2F_notebooks%2F2023-01-10-Hack.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/clairerepos/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-01-10-Hack.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<blockquote>
+<p>Add new attributes/variables to the Class.  Make class specific to your CPT work.</p>
+<ul>
+<li>Add classOf attribute to define year of graduation<ul>
+<li>Add setter and getter for classOf</li>
+</ul>
+</li>
+<li>Add dob attribute to define date of birth<ul>
+<li>This will require investigation into Python datetime objects as shown in example code below</li>
+<li>Add setter and getter for dob</li>
+</ul>
+</li>
+<li>Add instance variable for age, make sure if dob changes age changes<ul>
+<li>Add getter for age, but don't add/allow setter for age</li>
+</ul>
+</li>
+<li>Update and format tester function to work with changes</li>
+</ul>
+<p>Start a class design for each of your own Full Stack CPT sections of your project</p>
+<ul>
+<li>Use new <code>code cell</code> in this notebook</li>
+<li>Define <em>init</em> and self attributes</li>
+<li>Define setters and getters</li>
+<li>Make a tester</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Werkzeug is a collection of libraries that can be used to create a WSGI (Web Server Gateway Interface)</span>
+<span class="c1"># A gateway in necessary as a web server cannot communicate directly with Python.</span>
+<span class="c1"># In this case, imports are focused on generating hash code to protect passwords.</span>
+<span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="c1"># Define a User Class/Template</span>
+<span class="c1"># -- A User represents the data we want to manage</span>
+<span class="k">class</span> <span class="nc">User</span><span class="p">:</span>    
+<span class="c1"># the class is called User</span>
+    <span class="c1"># constructor of a User object, initializes the instance variables within object (self)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">classOf</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span> <span class="o">=</span> <span class="n">classOf</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">calculate_age</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span>
+    
+    <span class="nd">@dob</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="n">dob</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">calculate_age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
+    
+    <span class="c1"># a name getter method, extracts name from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="c1"># a getter method, extracts email from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@uid</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
+        
+    <span class="c1"># check if uid parameter matches user id in object, return boolean</span>
+    <span class="k">def</span> <span class="nf">is_uid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">==</span> <span class="n">uid</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">password</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"..."</span> <span class="c1"># because of security only show 1st characters</span>
+
+    <span class="c1"># update password, this is conventional setter</span>
+    <span class="k">def</span> <span class="nf">set_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="sd">"""Create a hashed password."""</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">generate_password_hash</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'sha256'</span><span class="p">)</span>
+
+    <span class="c1"># check password parameter versus stored/encrypted password</span>
+    <span class="k">def</span> <span class="nf">is_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="sd">"""Check against hashed password."""</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">check_password_hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    
+    <span class="c1"># output content using str(object) in human readable form, uses getter</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'name: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">", id: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s1">", psw: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="si">}</span><span class="s1">"'</span>
+
+    <span class="c1"># output command to recreate the object, uses attribute directly</span>
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'Person(name=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="si">}</span><span class="s1">, uid=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_uid</span><span class="si">}</span><span class="s1">, password=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="si">}</span><span class="s1">)'</span>
+
+
+<span class="c1"># tester method to print users</span>
+<span class="k">def</span> <span class="nf">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">psw</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+        <span class="c1"># test for match in database</span>
+        <span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">uid</span> <span class="o">==</span> <span class="n">uid</span> <span class="ow">and</span> <span class="n">user</span><span class="o">.</span><span class="n">is_password</span><span class="p">(</span><span class="n">psw</span><span class="p">):</span>  <span class="c1"># check for match</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"* "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">user</span>
+        <span class="c1"># print using __str__ method</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">user</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">result</span>
+        
+
+<span class="c1"># place tester code inside of special if!  This allows include without tester running</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+
+    <span class="c1"># define user objects</span>
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Thomas Edison'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'toby'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123toby'</span><span class="p">,</span> <span class="n">classOf</span><span class="o">=</span><span class="s1">'1884'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+    <span class="n">u2</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Nicholas Tesla'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'nick'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123nick'</span><span class="p">,</span> <span class="n">classOf</span><span class="o">=</span> <span class="s1">'1999'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+    <span class="n">u3</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Alexander Graham Bell'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'lex'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123lex'</span><span class="p">,</span> <span class="n">classOf</span><span class="o">=</span> <span class="s1">'1990'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+    <span class="n">u4</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Eli Whitney'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'eli'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123eli'</span><span class="p">,</span> <span class="n">classOf</span><span class="o">=</span> <span class="s1">'1782'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+    <span class="n">u5</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Hedy Lemarr'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'hedy'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123hedy'</span><span class="p">,</span> <span class="n">classOf</span><span class="o">=</span> <span class="s1">'1972'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+
+    <span class="c1"># put user objects in list for convenience</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
+
+    <span class="c1"># Find user</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 1, find user 3"</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123lex"</span><span class="p">)</span>
+
+    <span class="c1"># Change user</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 2, change user 3"</span><span class="p">)</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"John Mortensen"</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s2">"jm1021"</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="s2">"123qwerty"</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123qwerty"</span><span class="p">)</span>
+
+
+    <span class="c1"># Make dictionary</span>
+    <span class="sd">''' </span>
+<span class="sd">    The __dict__ in Python represents a dictionary or any mapping object that is used to store the attributes of the object. </span>
+<span class="sd">    Every object in Python has an attribute that is denoted by __dict__. </span>
+<span class="sd">    Use the json.dumps() method to convert the list of Users to a JSON string.</span>
+<span class="sd">    '''</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 3, make a dictionary"</span><span class="p">)</span>
+    <span class="n">json_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="n">user</span><span class="o">.</span><span class="vm">__dict__</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 4, make a dictionary"</span><span class="p">)</span>
+    <span class="n">json_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="nb">vars</span><span class="p">(</span><span class="n">user</span><span class="p">)</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test 1, find user 3
+name: "Thomas Edison", id: "toby", psw: "sha256$VXx..."
+name: "Nicholas Tesla", id: "nick", psw: "sha256$64H..."
+* name: "Alexander Graham Bell", id: "lex", psw: "sha256$4JB..."
+name: "Eli Whitney", id: "eli", psw: "sha256$SdO..."
+name: "Hedy Lemarr", id: "hedy", psw: "sha256$rw8..."
+Test 2, change user 3
+name: "Thomas Edison", id: "toby", psw: "sha256$VXx..."
+name: "Nicholas Tesla", id: "nick", psw: "sha256$64H..."
+* name: "John Mortensen", id: "jm1021", psw: "sha256$hJO..."
+name: "Eli Whitney", id: "eli", psw: "sha256$SdO..."
+name: "Hedy Lemarr", id: "hedy", psw: "sha256$rw8..."
+Test 3, make a dictionary
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 96&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=120'&gt;121&lt;/a&gt;</span> ''' 
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=121'&gt;122&lt;/a&gt;</span> The __dict__ in Python represents a dictionary or any mapping object that is used to store the attributes of the object. 
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=122'&gt;123&lt;/a&gt;</span> Every object in Python has an attribute that is denoted by __dict__. 
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=123'&gt;124&lt;/a&gt;</span> Use the json.dumps() method to convert the list of Users to a JSON string.
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=124'&gt;125&lt;/a&gt;</span> '''
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=125'&gt;126&lt;/a&gt;</span> print("Test 3, make a dictionary")
+<span class="ansi-green-fg">--&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=126'&gt;127&lt;/a&gt;</span> json_string = json.dumps([user.__dict__ for user in users]) 
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=127'&gt;128&lt;/a&gt;</span> print(json_string)
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-01-10-Hack.ipynb#W0sdnNjb2RlLXJlbW90ZQ%3D%3D?line=129'&gt;130&lt;/a&gt;</span> print("Test 4, make a dictionary")
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/json/__init__.py:231</span>, in <span class="ansi-cyan-fg">dumps</span><span class="ansi-blue-fg">(obj, skipkeys, ensure_ascii, check_circular, allow_nan, cls, indent, separators, default, sort_keys, **kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    226</span> # cached encoder
+<span class="ansi-green-intense-fg ansi-bold">    227</span> if (not skipkeys and ensure_ascii and
+<span class="ansi-green-intense-fg ansi-bold">    228</span>     check_circular and allow_nan and
+<span class="ansi-green-intense-fg ansi-bold">    229</span>     cls is None and indent is None and separators is None and
+<span class="ansi-green-intense-fg ansi-bold">    230</span>     default is None and not sort_keys and not kw):
+<span class="ansi-green-fg">--&gt; 231</span>     return _default_encoder.encode(obj)
+<span class="ansi-green-intense-fg ansi-bold">    232</span> if cls is None:
+<span class="ansi-green-intense-fg ansi-bold">    233</span>     cls = JSONEncoder
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/json/encoder.py:199</span>, in <span class="ansi-cyan-fg">JSONEncoder.encode</span><span class="ansi-blue-fg">(self, o)</span>
+<span class="ansi-green-intense-fg ansi-bold">    195</span>         return encode_basestring(o)
+<span class="ansi-green-intense-fg ansi-bold">    196</span> # This doesn't pass the iterator directly to ''.join() because the
+<span class="ansi-green-intense-fg ansi-bold">    197</span> # exceptions aren't as detailed.  The list call should be roughly
+<span class="ansi-green-intense-fg ansi-bold">    198</span> # equivalent to the PySequence_Fast that ''.join() would do.
+<span class="ansi-green-fg">--&gt; 199</span> chunks = self.iterencode(o, _one_shot=True)
+<span class="ansi-green-intense-fg ansi-bold">    200</span> if not isinstance(chunks, (list, tuple)):
+<span class="ansi-green-intense-fg ansi-bold">    201</span>     chunks = list(chunks)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/json/encoder.py:257</span>, in <span class="ansi-cyan-fg">JSONEncoder.iterencode</span><span class="ansi-blue-fg">(self, o, _one_shot)</span>
+<span class="ansi-green-intense-fg ansi-bold">    252</span> else:
+<span class="ansi-green-intense-fg ansi-bold">    253</span>     _iterencode = _make_iterencode(
+<span class="ansi-green-intense-fg ansi-bold">    254</span>         markers, self.default, _encoder, self.indent, floatstr,
+<span class="ansi-green-intense-fg ansi-bold">    255</span>         self.key_separator, self.item_separator, self.sort_keys,
+<span class="ansi-green-intense-fg ansi-bold">    256</span>         self.skipkeys, _one_shot)
+<span class="ansi-green-fg">--&gt; 257</span> return _iterencode(o, 0)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/json/encoder.py:179</span>, in <span class="ansi-cyan-fg">JSONEncoder.default</span><span class="ansi-blue-fg">(self, o)</span>
+<span class="ansi-green-intense-fg ansi-bold">    160</span> def default(self, o):
+<span class="ansi-green-intense-fg ansi-bold">    161</span>     """Implement this method in a subclass such that it returns
+<span class="ansi-green-intense-fg ansi-bold">    162</span>     a serializable object for ``o``, or calls the base implementation
+<span class="ansi-green-intense-fg ansi-bold">    163</span>     (to raise a ``TypeError``).
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    177</span> 
+<span class="ansi-green-intense-fg ansi-bold">    178</span>     """
+<span class="ansi-green-fg">--&gt; 179</span>     raise TypeError(f'Object of type {o.__class__.__name__} '
+<span class="ansi-green-intense-fg ansi-bold">    180</span>                     f'is not JSON serializable')
+
+<span class="ansi-red-fg">TypeError</span>: Object of type date is not JSON serializable</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="ClaireChen3/clairerepos"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/clairerepos/week%2015/2023/01/10/Hack.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/clairerepos/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://clairechen3.github.io/clairerepos/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/clairerepos/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>this is Claire Chen&#39;s blog for APCSP</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      7 min read
     
 </span></p>
 
@@ -312,13 +312,12 @@ window.onload = wrap_img;
         <span class="sd">"""Create database and tables"""</span>
         <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span> <span class="c1"># this line creates the tables in the database, to allow data to be added</span>
         <span class="sd">"""Tester data for table"""</span>
-        <span class="n">u1</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Annika Liao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">28</span><span class="p">)</span> 
-        <span class="n">u2</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Chen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span> 
-        <span class="n">u3</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Zhao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">31</span><span class="p">)</span> 
-        <span class="n">u4</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Grace Wang'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span> 
-        <span class="n">u5</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Emma Shen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span> 
+        <span class="n">u1</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Annika Liao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">28</span><span class="p">)</span> 
+        <span class="n">u2</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Chen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span> 
+        <span class="n">u3</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Zhao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">31</span><span class="p">)</span> 
+        <span class="n">u4</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Grace Wang'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span> 
+        <span class="n">u5</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Emma Shen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span> 
         <span class="c1"># user object is user in database. It takes the 4 arguments of name, uid, password, and dob.</span>
-
         <span class="n">symptoms</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
 
         <span class="sd">"""Builds sample user/note(s) data"""</span>
@@ -355,9 +354,9 @@ window.onload = wrap_img;
 <span class="ansi-green-intense-fg ansi-bold">/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb Cell 4</span> in <span class="ansi-cyan-fg">initSymptoms</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> db.create_all() # this line creates the tables in the database, to allow data to be added
 <span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> """Tester data for table"""
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> u1 = Symptom(name='Annika Liao', comment=6, symptomlength=28) 
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> u2 = Symptom(name='Claire Chen', comment=5, symptomlength=40) 
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> u3 = Symptom(name='Claire Zhao', comment=4, symptomlength=31) 
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> u1 = Symptom(name='Annika Liao', comment="hi", symptomlength=28) 
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> u2 = Symptom(name='Claire Chen', comment="hi", symptomlength=40) 
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> u3 = Symptom(name='Claire Zhao', comment="hi", symptomlength=31) 
 
 <span class="ansi-red-fg">TypeError</span>: __init__() got an unexpected keyword argument 'comment'</pre>
 </div>
@@ -532,7 +531,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while the INSERT: table symptoms has no column named _comment
+<pre>A new record  has been created
 </pre>
 </div>
 </div>

@@ -203,14 +203,14 @@ window.onload = wrap_img;
     <span class="c1"># Define the User schema with "vars" from object</span>
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">_comment</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">_symptomlength</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_ucomment</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_usymptom</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="c1"># constructor of a User object, initializes the instance variables within object (self)</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">_comment</span><span class="p">,</span> <span class="n">_symptomlength</span><span class="p">):</span> <span class="c1"># -- "constructor". init method allows us to initialize an object from our User class</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">ucomment</span><span class="p">,</span> <span class="n">usymptom</span><span class="p">):</span> <span class="c1"># -- "constructor". init method allows us to initialize an object from our User class</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_comment</span> <span class="o">=</span> <span class="n">_comment</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_symptomlength</span> <span class="o">=</span> <span class="n">_symptomlength</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ucomment</span> <span class="o">=</span> <span class="n">ucomment</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_usymptom</span> <span class="o">=</span> <span class="n">usymptom</span>
 
     <span class="c1"># a name getter method, extracts name from object, allows properties to be accessed like attributes of the object</span>
     <span class="nd">@property</span>
@@ -224,26 +224,26 @@ window.onload = wrap_img;
     
     <span class="c1"># a getter method, extracts email from object</span>
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">comment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_comment</span>
+    <span class="k">def</span> <span class="nf">ucomment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ucomment</span>
     
     <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
-    <span class="nd">@comment</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">comment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">comment</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_comment</span> <span class="o">=</span> <span class="n">comment</span>
+    <span class="nd">@ucomment</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ucomment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ucomment</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ucomment</span> <span class="o">=</span> <span class="n">ucomment</span>
         
     <span class="c1"># check if uid parameter matches user id in object, return boolean</span>
     <span class="k">def</span> <span class="nf">is_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">==</span> <span class="n">name</span>
     
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">symptomlength</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symptomlength</span>
+    <span class="k">def</span> <span class="nf">usymptom</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_usymptom</span>
     
     <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
-    <span class="nd">@symptomlength</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">symptomlength</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symptomlength</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_symptomlength</span> <span class="o">=</span> <span class="n">symptomlength</span>
+    <span class="nd">@usymptom</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">usymptom</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">usymptom</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_usymptom</span> <span class="o">=</span> <span class="n">usymptom</span>
     
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -264,20 +264,20 @@ window.onload = wrap_img;
         <span class="k">return</span> <span class="p">{</span>
             <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
             <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
-            <span class="s2">"comment"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">comment</span><span class="p">,</span>
-            <span class="s2">"symptomlength"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">symptomlength</span><span class="p">,</span>
+            <span class="s2">"comment"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">ucomment</span><span class="p">,</span>
+            <span class="s2">"symptom"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">usymptom</span><span class="p">,</span>
         <span class="p">}</span>
 
     <span class="c1"># CRUD update: updates user name, password, phone</span>
     <span class="c1"># returns self</span>
-    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
         <span class="sd">"""only updates values with length"""</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">comment</span> <span class="o">=</span> <span class="n">comment</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">symptomlength</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">symptomlength</span> <span class="o">=</span> <span class="n">symptomlength</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ucomment</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ucomment</span> <span class="o">=</span> <span class="n">ucomment</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">usymptom</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">usymptom</span> <span class="o">=</span> <span class="n">usymptom</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
         <span class="k">return</span> <span class="bp">self</span>
 
@@ -312,24 +312,24 @@ window.onload = wrap_img;
         <span class="sd">"""Create database and tables"""</span>
         <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span> <span class="c1"># this line creates the tables in the database, to allow data to be added</span>
         <span class="sd">"""Tester data for table"""</span>
-        <span class="n">u1</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Annika Liao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">28</span><span class="p">)</span> 
-        <span class="n">u2</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Chen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span> 
-        <span class="n">u3</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Zhao'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">31</span><span class="p">)</span> 
-        <span class="n">u4</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Grace Wang'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span> 
-        <span class="n">u5</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Emma Shen'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="n">symptomlength</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span> 
+        <span class="n">u1</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Annika Liao'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'tylenol'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'cramps'</span><span class="p">)</span> 
+        <span class="n">u2</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Chen'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'tea'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'headaches'</span><span class="p">)</span> 
+        <span class="n">u3</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Zhao'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'heating pad'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'cramps'</span><span class="p">)</span> 
+        <span class="n">u4</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Grace Wang'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'magnesium'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'muscle aches'</span><span class="p">)</span> 
+        <span class="n">u5</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Emma Shen'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'vitamin d'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'acne'</span><span class="p">)</span> 
         <span class="c1"># user object is user in database. It takes the 4 arguments of name, uid, password, and dob.</span>
         <span class="n">symptoms</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
 
         <span class="sd">"""Builds sample user/note(s) data"""</span>
         <span class="k">for</span> <span class="n">symptom</span> <span class="ow">in</span> <span class="n">symptoms</span><span class="p">:</span>
             <span class="k">try</span><span class="p">:</span>
-                <span class="sd">'''add user to table'''</span>
+                <span class="sd">'''add comment to table'''</span>
                 <span class="nb">object</span> <span class="o">=</span> <span class="n">symptom</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Created new uid </span><span class="si">{</span><span class="nb">object</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="c1"># try block is creation of user in database. If successful,this message will print.</span>
             <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object nit created</span>
                 <span class="sd">'''fails with bad or duplicate data'''</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist uid </span><span class="si">{</span><span class="n">symptom</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, or error."</span><span class="p">)</span> <span class="c1">#if try block fails, except block is executed, and this message will print.</span>
-                
+
 <span class="n">initSymptoms</span><span class="p">()</span>
 </pre></div>
 
@@ -342,23 +342,13 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 29&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span>                 '''fails with bad or duplicate data'''
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span>                 print(f"Records exist uid {symptom.name}, or error.") #if try block fails, except block is executed, and this message will print.
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=28'&gt;29&lt;/a&gt;</span> initSymptoms()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb Cell 4</span> in <span class="ansi-cyan-fg">initSymptoms</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> db.create_all() # this line creates the tables in the database, to allow data to be added
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> """Tester data for table"""
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> u1 = Symptom(name='Annika Liao', comment="hi", symptomlength=28) 
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> u2 = Symptom(name='Claire Chen', comment="hi", symptomlength=40) 
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-03-24-Database2.4b.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> u3 = Symptom(name='Claire Zhao', comment="hi", symptomlength=31) 
-
-<span class="ansi-red-fg">TypeError</span>: __init__() got an unexpected keyword argument 'comment'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created new uid Annika Liao
+Created new uid Claire Chen
+Records exist uid Claire Zhao, or error.
+Created new uid Grace Wang
+Created new uid Emma Shen
+</pre>
 </div>
 </div>
 
@@ -471,7 +461,10 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Table is empty
+<pre>(1, 'Annika Liao', 'tylenol', 'cramps')
+(2, 'Claire Chen', 'tea', 'headaches')
+(3, 'Grace Wang', 'magnesium', 'muscle aches')
+(4, 'Emma Shen', 'vitamin d', 'acne')
 </pre>
 </div>
 </div>
@@ -493,8 +486,8 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
     <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your name:"</span><span class="p">)</span>
-    <span class="n">comment</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your comment:"</span><span class="p">)</span>
-    <span class="n">symptomlength</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the symptom you're addressing"</span><span class="p">)</span>
+    <span class="n">ucomment</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your comment:"</span><span class="p">)</span>
+    <span class="n">usymptom</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the symptom you're addressing"</span><span class="p">)</span>
     
     <span class="c1"># Connect to the database file</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
@@ -504,7 +497,7 @@ window.onload = wrap_img;
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to insert data into a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO symptoms (_name, _comment, _symptomlength) VALUES (?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">comment</span><span class="p">,</span> <span class="n">symptomlength</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO symptoms (_name, _ucomment, _usymptom) VALUES (?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">ucomment</span><span class="p">,</span> <span class="n">usymptom</span><span class="p">))</span>
         
         <span class="c1"># Commit the changes to the database</span>
         <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
@@ -562,9 +555,9 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Current user information:"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 
-    <span class="n">comment</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter comment"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">comment</span><span class="p">:</span>
-        <span class="n">user</span><span class="o">.</span><span class="n">comment</span> <span class="o">=</span> <span class="n">comment</span>
+    <span class="n">ucomment</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter comment"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ucomment</span><span class="p">:</span>
+        <span class="n">user</span><span class="o">.</span><span class="n">ucomment</span> <span class="o">=</span> <span class="n">ucomment</span>
 
     <span class="c1"># Connect to the database file</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
@@ -574,12 +567,12 @@ window.onload = wrap_img;
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to update data in a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE periods SET _comment = ? WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">comment</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE periods SET _comment = ? WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">ucomment</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> was found in the table"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> has been updated, period length changed to </span><span class="si">{</span><span class="n">comment</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> has been updated, period length changed to </span><span class="si">{</span><span class="n">ucomment</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>

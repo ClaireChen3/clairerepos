@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -317,6 +317,7 @@ window.onload = wrap_img;
         <span class="n">u3</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Claire Zhao'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'heating pad'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'cramps'</span><span class="p">)</span> 
         <span class="n">u4</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Grace Wang'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'magnesium'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'muscle aches'</span><span class="p">)</span> 
         <span class="n">u5</span> <span class="o">=</span> <span class="n">Symptom</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Emma Shen'</span><span class="p">,</span> <span class="n">ucomment</span><span class="o">=</span><span class="s1">'vitamin d'</span><span class="p">,</span> <span class="n">usymptom</span><span class="o">=</span><span class="s1">'acne'</span><span class="p">)</span> 
+        
         <span class="c1"># user object is user in database. It takes the 4 arguments of name, uid, password, and dob.</span>
         <span class="n">symptoms</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
 
@@ -343,11 +344,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created new uid Annika Liao
-Created new uid Claire Chen
+<pre>Records exist uid Annika Liao, or error.
+Records exist uid Claire Chen, or error.
 Records exist uid Claire Zhao, or error.
-Created new uid Grace Wang
-Created new uid Emma Shen
+Records exist uid Grace Wang, or error.
+Records exist uid Emma Shen, or error.
 </pre>
 </div>
 </div>
@@ -465,6 +466,8 @@ Created new uid Emma Shen
 (2, 'Claire Chen', 'tea', 'headaches')
 (3, 'Grace Wang', 'magnesium', 'muscle aches')
 (4, 'Emma Shen', 'vitamin d', 'acne')
+(5, '', '', '')
+(6, 'lora', 'aspirin', 'ifhewowh')
 </pre>
 </div>
 </div>
@@ -511,24 +514,10 @@ Created new uid Emma Shen
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">create</span><span class="p">()</span>
+<span class="c1">#create()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>A new record  has been created
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -567,13 +556,14 @@ Created new uid Emma Shen
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to update data in a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE periods SET _comment = ? WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">ucomment</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE symptoms SET _ucomment = ? WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">ucomment</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> was found in the table"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> has been updated, period length changed to </span><span class="si">{</span><span class="n">ucomment</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> has been updated, comment changed to </span><span class="si">{</span><span class="n">ucomment</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
         
@@ -581,7 +571,8 @@ Created new uid Emma Shen
     <span class="c1"># Close the cursor and connection objects</span>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">update</span><span class="p">()</span>
+
+<span class="c1">#update()</span>
 </pre></div>
 
     </div>
@@ -610,12 +601,12 @@ Created new uid Emma Shen
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM periods WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM symptoms WHERE _name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="c1"># The uid was found in the table and the row was deleted</span>
+            <span class="c1"># The uid was found in the ta'ble and the row was deleted</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The record of name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> was successfully deleted"</span><span class="p">)</span>
         <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
@@ -625,24 +616,10 @@ Created new uid Emma Shen
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">delete</span><span class="p">()</span>
+<span class="c1">#delete()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the DELETE: no such table: periods
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -681,6 +658,41 @@ Created new uid Emma Shen
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Annika Liao', 'tylenol', 'cramps')
+(2, 'Claire Chen', 'tea', 'headaches')
+(3, 'Grace Wang', 'magnesium', 'muscle aches')
+(4, 'Emma Shen', 'vitamin d', 'acne')
+(5, '', '', '')
+(6, 'lora', 'aspirin', 'ifhewowh')
+Current user information:
+{'id': 6, 'name': 'lora', 'comment': 'aspirin', 'symptom': 'ifhewowh'}
+The row with name lora has been updated, comment changed to sudafed
+(1, 'Annika Liao', 'tylenol', 'cramps')
+(2, 'Claire Chen', 'tea', 'headaches')
+(3, 'Grace Wang', 'magnesium', 'muscle aches')
+(4, 'Emma Shen', 'vitamin d', 'acne')
+(5, '', '', '')
+(6, 'lora', 'sudafed', 'ifhewowh')
+The record of name lora was successfully deleted
+(1, 'Annika Liao', 'tylenol', 'cramps')
+(2, 'Claire Chen', 'tea', 'headaches')
+(3, 'Grace Wang', 'magnesium', 'muscle aches')
+(4, 'Emma Shen', 'vitamin d', 'acne')
+(5, '', '', '')
+The record of name  was successfully deleted
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

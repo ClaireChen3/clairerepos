@@ -1,0 +1,12 @@
+--2023-04-21 13:32:28--  https://raw.githubusercontent.com/F1nnC/Playground/gh-pages/2023-04-21-EOYPLAYGROUND.ipynb
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... failed: Connection timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13183 (13K) [text/plain]
+Saving to: ‘2023-04-21-EOYPLAYGROUND.ipynb’
+
+     0K .......... ..                                         100% 11.7M=0.001s
+
+2023-04-21 13:34:41 (11.7 MB/s) - ‘2023-04-21-EOYPLAYGROUND.ipynb’ saved [13183/13183]
+

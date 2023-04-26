@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      16 min read
     
 </span></p>
 
@@ -371,6 +371,21 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total plate appearances: 21
+On-base percentage: 0.857
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -414,6 +429,23 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The 25th percentile height is 192.5 cm.
+The 50th percentile height is 198.0 cm.
+The 75th percentile height is 202.0 cm.
+There are 2 players in the top 10% tallest.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -427,24 +459,41 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1">#Create a NumPy array of the x</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
+<span class="n">cycle_lengths</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">39</span><span class="p">])</span>
 
 <span class="c1"># Calculate the percentile rank of x</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">cycle_percentiles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">cycle_lengths</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">75</span><span class="p">])</span>
 
 <span class="c1"># Print the results</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span> <span class="n">percentiles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">""</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span> <span class="n">percentiles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">""</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span> <span class="n">percentiles</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">""</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 10th percentile cycle length is"</span><span class="p">,</span> <span class="n">cycle_percentiles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"days long"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 50th percentile cycle length is"</span><span class="p">,</span> <span class="n">cycle_percentiles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"days long"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 75th percentile cycle length is"</span><span class="p">,</span> <span class="n">cycle_percentiles</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">"days long"</span><span class="p">)</span>
 
 <span class="c1"># Determine the number of players who are in the top 10% x</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">t</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">cycle_lengths</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">cycle_lengths</span><span class="p">[</span><span class="n">cycle_lengths</span> <span class="o">&gt;=</span> <span class="n">t</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"There are"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">),</span> <span class="s2">"players in the top 10% (x)."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"There are"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">),</span> <span class="s2">"women in the top 10%"" of cycle lengths."</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The 10th percentile cycle length is 31.2 days long
+The 50th percentile cycle length is 35.0 days long
+The 75th percentile cycle length is 39.5 days long
+There are 1 women in the top 10% of cycle lengths.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -559,6 +608,22 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'1.4.2'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -595,7 +660,7 @@ Pandas is like a helper that helps you to remember where each toy is located. So
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># Load the CSV file into a Pandas DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/Users/josh/Repository-1/nba_player_statistics.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/home/claire/vscode/clairerepos/_notebooks/nba_player_statistics.csv'</span><span class="p">)</span>
 <span class="c1"># Filter the DataFrame to only include stats for a specific player (in this case, Jimmy Butler)</span>
 <span class="n">player_name</span> <span class="o">=</span> <span class="s1">'Jimmy Butler'</span>
 <span class="n">player_stats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'NAME'</span><span class="p">]</span> <span class="o">==</span> <span class="n">player_name</span><span class="p">]</span>
@@ -605,6 +670,23 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Stats for Jimmy Butler:
+    PPG  RPG   APG
+0  35.0  5.0  11.0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -647,7 +729,7 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/Users/josh/Repository-1/nba_player_statistics.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/home/claire/vscode/clairerepos/_notebooks/nba_player_statistics.csv'</span><span class="p">)</span>
 <span class="c1"># Load CSV file into a Pandas DataFrame</span>
 <span class="n">player_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter player name: "</span><span class="p">)</span>
 <span class="c1"># Get player name input from user</span>
@@ -663,6 +745,23 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>No stats found for that player.
+Empty DataFrame
+Columns: [PPG, RPG, APG, P+R+A]
+Index: []
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -707,7 +806,7 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 
 <span class="c1"># Load CSV file into a Pandas DataFrame</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/Users/josh/Repository-1/nba_player_statistics.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/home/claire/vscode/clairerepos/_notebooks/nba_player_statistics.csv'</span><span class="p">)</span>
 
 <span class="c1"># Filter the DataFrame to only include stats for the specified player</span>
 
@@ -734,6 +833,20 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>No stats found for that player.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -771,7 +884,7 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># Load the CSV file into a Pandas DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/Users/josh/Repository-1/nba_player_statistics.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/home/claire/vscode/clairerepos/_notebooks/nba_player_statistics.csv'</span><span class="p">)</span>
 
 <span class="c1"># Print the first 5 rows of the DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
@@ -795,6 +908,47 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   RANK             NAME TEAM POS   AGE  GP   MPG  USG%   TO%  FTA  ...   APG  \
+0     1     Jimmy Butler  Mia   F  33.6   1  42.9  34.3   9.9    8  ...  11.0   
+1     2    Kawhi Leonard  Lac   F  31.8   2  40.2  30.0  11.9   17  ...   6.0   
+2     3  Khris Middleton  Mil   F  31.7   1  33.1  37.5  19.8   10  ...   4.0   
+3     4     Devin Booker  Pho   G  26.5   2  44.1  28.8  16.2   14  ...   6.0   
+4     5     De'Aaron Fox  Sac   G  25.3   2  38.2  31.6   9.0   14  ...   7.0   
+
+   SPG  BPG  TPG   P+R   P+A  P+R+A    VI   ORtg   DRtg  
+0  3.0  0.0  3.0  40.0  46.0   51.0  11.6  117.2  103.8  
+1  2.0  0.5  3.0  41.0  40.5   47.0  11.0  129.5  110.4  
+2  0.0  0.0  5.0  42.0  37.0   46.0  12.8  115.5  111.9  
+3  2.5  1.5  4.0  33.0  38.0   39.0   5.2  121.9  111.0  
+4  3.5  0.5  2.5  34.0  38.0   41.0   9.1  112.6  108.8  
+
+[5 rows x 29 columns]
+Mean Minutes:  20.985483870967748
+Median Minutes:  23.0
+Standard Deviation Minutes:  12.844102823170283
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -872,12 +1026,51 @@ Pandas is like a helper that helps you to remember where each toy is located. So
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># read the CSV file</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"blank.csv"</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"hurricane.csv"</span><span class="p">)</span>
 <span class="c1"># display the data in a table</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">hurricane</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span>
+<span class="n">hurricane_years</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Years'</span><span class="p">]</span>
+<span class="c1">#print(df)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hurricane</span><span class="p">,</span> <span class="n">hurricane_years</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0         Ida
+1        Fred
+2        Bill
+3       Erika
+4       Danny
+        ...  
+485      Aila
+486     Laila
+487      Mala
+488    Nargis
+489      Phet
+Name: Name, Length: 490, dtype: object 0            2009
+1            2009
+2      1997, 2009
+3      1997, 2009
+4      1997, 2009
+          ...    
+485          2009
+486          2010
+487          2006
+488          2008
+489          2010
+Name: Years, Length: 490, dtype: object
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -890,12 +1083,37 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 <h2 id="Question-Hacks;">
 <a class="anchor" href="#Question-Hacks;" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Hacks;<a class="anchor-link" href="#Question-Hacks;"> </a>
 </h2>
-<p>What is NumPy and how is it used in data analysis?</p>
-<p>What is Pandas and how is it used in data analysis?</p>
-<p>How is NunPy different than Pandas for data analysis?</p>
-<p>What is a DataFrame?</p>
-<p>What are some common operations you can perform with NunPy?</p>
-<p>How Can You Incorporate Either of these Data Analysis Tools (NunPy, Pandas) into your project?</p>
+<ol>
+<li><strong>What is NumPy and how is it used in data analysis?</strong></li>
+</ol>
+<p>NumPy is a Python library used for scientific computing and data analysis that provides  multidimensional array objects, various derived objects, and functions for working with these arrays. NumPy is used for mathematical and statistical operations on arrays which is helpful for data analysis, scientific research, and machine learning.</p>
+<ol>
+<li><strong>What is Pandas and how is it used in data analysis?</strong></li>
+</ol>
+<p>Pandas is a Python library used for data manipulation and analysis that provides two data structures, Series and DataFrame, for handling structured data. Pandas is used for reading and writing data in various formats, cleaning data, merging and joining datasets, and performing statistical analysis and visualization.</p>
+<ol>
+<li><strong>How is NumPy different than Pandas for data analysis?</strong></li>
+</ol>
+<p>NumPy and Pandas are both used for data analysis, but NumPy is primarily used for numerical operations on arrays, whereas Pandas is used for handling structured data.</p>
+<ol>
+<li><strong>What is a DataFrame?</strong></li>
+</ol>
+<p>A DataFrame is a two-dimensional labeled data structure in Pandas that consists of rows and columns, where each column can have a different data type. (like excel spreadsheets)</p>
+<ol>
+<li><strong>What are some common operations you can perform with NumPy?</strong></li>
+</ol>
+<ul>
+<li>Creating arrays</li>
+<li>Indexing arrays</li>
+<li>Performing mathematical operations</li>
+<li>summarizing data</li>
+<li>Sorting and searching arrays</li>
+</ul>
+<ol>
+<li>
+<strong>How can you incorporate either of these data analysis tools (NumPy, Pandas) into your project?</strong>
+I can use pandas to compare and summarize the cycle lengths of the users to make conclusions such as, what is the average cycle length of my users.</li>
+</ol>
 
 </div>
 </div>

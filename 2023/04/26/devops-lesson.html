@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -166,6 +166,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>142.250.176.14
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -185,6 +199,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Successfully connected!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -195,8 +223,10 @@ window.onload = wrap_img;
 <a class="anchor" href="#Check-In" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check-In<a class="anchor-link" href="#Check-In"> </a>
 </h2>
 <ol>
-<li>What is an IP address?</li>
-<li>What is a TCP port?</li>
+<li>What is an IP address?<br>
+IP address is an internet protocol, every device has a unique IP</li>
+<li>What is a TCP port?<br>
+A TCP port is a safe way to send information ove the internet in packets</li>
 </ol>
 
 </div>
@@ -224,6 +254,38 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HTTP/1.1 200 OK
+Date: Wed, 26 Apr 2023 21:07:26 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-R1raQeptcsEmB4BSjgfD4Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: 1P_JAR=2023-04-26-21; expires=Fri, 26-May-2023 21:07:26 GMT; path=/; domain=.google.com; Secure
+Set-Cookie: AEC=AUEFqZeFf_SVdLnoeTwrKbju0vOlMg8bPwLYK8vDZfDL1z_9GHd22qkHZw; expires=Mon, 23-Oct-2023 21:07:26 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+Set-Cookie: NID=511=OpF5gimsGVCopMc3yBew4a9-EDkkPgm0zb68ppDg5DfI3VjwwciM0pBGye3bX8xh_zKXwFu-bMAw8XkNKAClEpAzI6AFD8os9HGbxspBHsIq_Y_Ar5-5hhe9DviWapZceVxcu6GW0atly2QkpdH1gSek3N8xhz7RO_ZrKDn_tD0; expires=Thu, 26-Oct-2023 21:07:26 GMT; path=/; domain=.google.com; HttpOnly
+Accept-Ranges: none
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+5a4c
+&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="en"&gt;&lt;head&gt;&lt;meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"&gt;&lt;meta content="noodp" name="robots"&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="R1raQeptcsEmB4BSjgfD4Q"&gt;(function(){window.google={kEI:'jpJJZMeOGNfGkPIPtK6yiAc',kEXPI:'0,1303459,55950,6058,207,4804,2316,383,246,5,1129120,1197731,663,380097,16114,28684,22431,1361,283,12029,17587,4998,13228,3847,38444,887,1985,2891,3926,7828,606,58286,2404,15324,432,3,346,1244,1,16916,2652,4,1528,2304,24859,4203,9871,3193,11443,2216,2980,1457,16786,5797,2560,4094,7596,1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -237,7 +299,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c1"># Change the URL to whatever you'd like</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://google.com"</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://0x0800.github.io/2048-CUPCAKES/"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Status code:"</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Headers:"</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
@@ -248,6 +310,28 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Status code: 200
+Headers: {'Connection': 'keep-alive', 'Content-Length': '1637', 'Server': 'GitHub.com', 'Content-Type': 'text/html; charset=utf-8', 'permissions-policy': 'interest-cohort=()', 'x-origin-cache': 'HIT', 'Last-Modified': 'Tue, 07 Mar 2017 14:38:21 GMT', 'Access-Control-Allow-Origin': '*', 'ETag': 'W/"58bec5dd-133f"', 'expires': 'Tue, 25 Apr 2023 12:17:08 GMT', 'Cache-Control': 'max-age=600', 'Content-Encoding': 'gzip', 'x-proxy-cache': 'MISS', 'X-GitHub-Request-Id': '6CA2:1395:72F0C2:866C54:6447C26C', 'Accept-Ranges': 'bytes', 'Date': 'Wed, 26 Apr 2023 21:14:30 GMT', 'Via': '1.1 varnish', 'Age': '506', 'X-Served-By': 'cache-bur-kbur8200147-BUR', 'X-Cache': 'HIT', 'X-Cache-Hits': '1', 'X-Timer': 'S1682543671.655344,VS0,VE1', 'Vary': 'Accept-Encoding', 'X-Fastly-Request-ID': 'c08b543c7960962268fc92aec0ae85bc4f6c59bd'}
+Response text: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;2048 CUPCAKES&lt;/title&gt;
+
+  &lt;link href=
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -277,6 +361,28 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;html&gt;&lt;head&gt;&lt;title&gt;ContentKeeper&lt;/title&gt;&lt;/heQad&gt;
+&lt;body bgcolor="#A02E5F" text="White" link="Lime" vlink="Aqua"&gt;
+&lt;center&gt;&lt;br&gt;&lt;h1&gt;ContentKeeper&lt;br&gt;Non-Managed Site&lt;/h1&gt;
+No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
+&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;URL&lt;/td&gt;&lt;td&gt;&lt;b&gt;3.130.255.192&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Username&lt;/td&gt;&lt;td&gt;&lt;b&gt;1905546/pusd&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;&lt;/html&gt;
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -330,10 +436,14 @@ window.onload = wrap_img;
 <a class="anchor" href="#Check-In" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check In<a class="anchor-link" href="#Check-In"> </a>
 </h2>
 <ol>
-<li>Research 1 HTTP header and describe, in detail, its purpose.</li>
-<li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</li>
-<li>Explain the purpose of the load balancing performed by NGINX</li>
-<li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
+<li>Research 1 HTTP header and describe, in detail, its purpose.<br>
+</li>
+<li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location<br>
+</li>
+<li>Explain the purpose of the load balancing performed by NGINX<br>
+</li>
+<li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site<br>
+</li>
 </ol>
 
 </div>
@@ -354,6 +464,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The secret header is: ...
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -385,17 +509,25 @@ window.onload = wrap_img;
 <a class="anchor" href="#CORS-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>CORS Hacks<a class="anchor-link" href="#CORS-Hacks"> </a>
 </h1>
 <ol>
-<li>Explain what CORS is and what it stands for</li>
-<li>Describe how you would be able to implement CORS into your own websites</li>
-<li>Describe why you would want to implement CORS into your own websites</li>
-<li>How could use CORS to benefit yourself in the future?</li>
+<li>Explain what CORS is and what it stands for<br>
+Cross origin resource sharing</li>
+<li>
+<p>Describe how you would be able to implement CORS into your own websites<br></p>
+</li>
+<li>
+<p>Describe why you would want to implement CORS into your own websites<br>
+to protect users from getting information stolen and be able to make requests without permission to other domains</p>
+</li>
+<li>How could use CORS to benefit yourself in the future?<br>
+I can use CORS to benefit myself in the future to be bale to make websites that need to access multiple domains whilst still keeping the user protected.
+Total: 0.2 points</li>
 </ol>
-<p>Total: 0.2 points</p>
 <h1 id="KASM-Hacks">
 <a class="anchor" href="#KASM-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a>
 </h1>
 <ol>
-<li>What is the purpose of "sudo" when running commands in terminal?</li>
+<li>What is the purpose of "sudo" when running commands in terminal?
+to get permission to run certain commands</li>
 <li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
 <li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
 <li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>

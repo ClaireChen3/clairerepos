@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 4 Hacks | Claire Chen</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 4 Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="this is Claire Chen’s blog for APCSP" />
+<meta property="og:description" content="this is Claire Chen’s blog for APCSP" />
+<link rel="canonical" href="https://clairechen3.github.io/clairerepos/week%2027/2023/04/30/unit4hacks.html" />
+<meta property="og:url" content="https://clairechen3.github.io/clairerepos/week%2027/2023/04/30/unit4hacks.html" />
+<meta property="og:site_name" content="Claire Chen" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 4 Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-30T00:00:00-05:00","datePublished":"2023-04-30T00:00:00-05:00","description":"this is Claire Chen’s blog for APCSP","headline":"Unit 4 Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairechen3.github.io/clairerepos/week%2027/2023/04/30/unit4hacks.html"},"url":"https://clairechen3.github.io/clairerepos/week%2027/2023/04/30/unit4hacks.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/clairerepos/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairechen3.github.io/clairerepos/feed.xml" title="Claire Chen" /><link rel="shortcut icon" type="image/x-icon" href="/clairerepos/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/clairerepos/">Claire Chen</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/clairerepos/_pages/2022-08-22-Markdown.html">Claire&#39;s Markdown Post</a><a class="page-link" href="/clairerepos/_pages/2022-08-26-Jupyter.html">Claire&#39;s Jupyter Notebook</a><a class="page-link" href="/clairerepos/_pages/2022-08-29-Vocab.html">Vocab</a><a class="page-link" href="/clairerepos/Class%20Progress">Class Progress</a><a class="page-link" href="/clairerepos/_pages/2022-09-26-Submenu.html">Submenu</a><a class="page-link" href="/clairerepos/about/">About Me</a><a class="page-link" href="/clairerepos/search/">Search</a><a class="page-link" href="/clairerepos/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 4 Hacks</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-30T00:00:00-05:00" itemprop="datePublished">
+        Apr 30, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/clairerepos/categories/#week 27">week 27</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/ClaireChen3/clairerepos/tree/master/_notebooks/2023-04-30-unit4hacks.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/clairerepos/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/ClaireChen3/clairerepos/master?filepath=_notebooks%2F2023-04-30-unit4hacks.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/ClaireChen3/clairerepos/blob/master/_notebooks/2023-04-30-unit4hacks.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clairerepos/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FClaireChen3%2Fclairerepos%2Fblob%2Fmaster%2F_notebooks%2F2023-04-30-unit4hacks.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/clairerepos/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Requirements">Requirements </a></li>
+<li class="toc-entry toc-h1"><a href="#How-a-Computer-Works">How a Computer Works </a></li>
+<li class="toc-entry toc-h1"><a href="#The-Internet">The Internet </a></li>
+<li class="toc-entry toc-h1"><a href="#Fault-Tolerance">Fault Tolerance </a></li>
+<li class="toc-entry toc-h1"><a href="#Parallel-and-Distributed-Computing">Parallel and Distributed Computing </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-30-unit4hacks.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Requirements">
+<a class="anchor" href="#Requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements<a class="anchor-link" href="#Requirements"> </a>
+</h1>
+<p>Work through College Board Unit 4… blog, add definitions, and pictures. Be creative, for instance make a story of Computing and Networks that is related to your PBL experiences this year.</p>
+<h1 id="How-a-Computer-Works">
+<a class="anchor" href="#How-a-Computer-Works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How a Computer Works<a class="anchor-link" href="#How-a-Computer-Works"> </a>
+</h1>
+<p>List specification of your Computer, or Computers if working as Pair/Trio</p>
+<p>Device name LenovoX1Win10<br>
+Processor   Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz   2.40 GHz<br>
+Installed RAM   8.00 GB (7.87 GB usable)<br>
+Device ID   EC42FC38-9DA6-4690-A71F-0B84525B66C1<br>
+Product ID  00331-10000-00001-AA619<br>
+System type 64-bit operating system, x64-based processor<br>
+Pen and touch   No pen or touch input is available for this display<br>
+Edition Windows 10 Pro<br>
+Version 21H2<br>
+Installed on    ‎8/‎19/‎2022<br>
+OS build    19044.2846<br>
+Experience  Windows Feature Experience Pack 120.2212.4190.0<br></p>
+<p>Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text. Use your experience.</p>
+<ul>
+<li>Input devices</li>
+<li>Output devices</li>
+<li>Program File</li>
+<li>Program Code</li>
+<li>Processes</li>
+<li>Ports</li>
+<li>Data File</li>
+<li>Inspect Running Code</li>
+<li>Inspect Variables</li>
+</ul>
+<h1 id="The-Internet">
+<a class="anchor" href="#The-Internet" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Internet<a class="anchor-link" href="#The-Internet"> </a>
+</h1>
+<p>Watch/review College Board Daily Video for 4.1.1
+Complete Vocabulary Matching Activity. Incorporate this into your learnings from year. To analyze measure path and latency use traceroute and ping commands from Linux Terminal.</p>
+<ul>
+<li>Path: a sequence of directly connected computing devices that begins at the sender and ends at the receiver</li>
+<li>Route: the process of finding a path from the sender to the receiver</li>
+<li>Computer System: a group of computing devices and programs working together for a common purpose</li>
+<li>Computer Device: a physical artifact that can run a program. Some examples include, computers, tablets, servers, routers,a dn smart sensors</li>
+<li>Bandwidth: the maximum amount of data that can be sent in a fixed amount of time</li>
+<li>Computer Network: a group of interconnected computing devices capable of sending or receiving</li>
+</ul>
+<p>Watch/review College Board Daily Video 4.1.2</p>
+<ul>
+<li>Complete True of False Questions<ul>
+<li>open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet<ul>
+<li>true, because it is open</li>
+</ul>
+</li>
+<li>IETF is a task force used to enforce laws to keep manufacturers out of the internet<ul>
+<li>false , it is there to accept protocols, but is open to everyone</li>
+</ul>
+</li>
+<li>routers are determined in advanced and are not flexible<ul>
+<li>false, routers are flexible and help push things along</li>
+</ul>
+</li>
+<li>a protocol is a set of agreed upon rules<ul>
+<li>true</li>
+</ul>
+</li>
+<li>UDP guarantees transfers and is faster<ul>
+<li>false, it doesn't guarantees transfers</li>
+</ul>
+</li>
+<li>The World Wide Web is the internet<ul>
+<li>false, The internet is the infrastructure that connects computer networks together, while the World Wide Web is a system of organizing information that's accessible through the internet.</li>
+</ul>
+</li>
+<li>HTTP is a protocol used by the World Wide Web<ul>
+<li>true</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Go over AP videos, vocabulary, and essential knowledge. Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend backend, deployment, etc. Picture would highlight vocabulary by illustration.<br>
+<img src="https://i.imgur.com/LrWQkCO.png" alt="">
+</li>
+</ul>
+<h1 id="Fault-Tolerance">
+<a class="anchor" href="#Fault-Tolerance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fault Tolerance<a class="anchor-link" href="#Fault-Tolerance"> </a>
+</h1>
+<ul>
+<li>Watch both Daily videos for 4.2</li>
+<li>Complete the network activity, summarize your understanding of fault tolerance.</li>
+</ul>
+<h1 id="Parallel-and-Distributed-Computing">
+<a class="anchor" href="#Parallel-and-Distributed-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel and Distributed Computing<a class="anchor-link" href="#Parallel-and-Distributed-Computing"> </a>
+</h1>
+<ul>
+<li>
+<p>Review previous lecture on Parallel Computing and watch Daily vidoe 4.3. Think of ways to make something in you team project to utilize Cores more effectively. Here are some thoughts to add to your story of Computers and Networks…</p>
+</li>
+<li>
+<p>What is naturally Distributed in Frontend/Backend archeticture?</p>
+</li>
+<li>
+<p>Analyze this command in Docker: ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086". Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn. Here is an article</p>
+</li>
+<li>
+<p>Last week we discussed parallel computing on local machine. There are many options. Here is something to get parallel computing work with a tool called Ray.</p>
+</li>
+<li>
+<p>Review this <a href="https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray">article</a> Can you get parallel code on images to work more effectively? I have not tried Ray.
+Code example from ChatGPT using squares. This might be more interesting if nums we generated to be a lot bigger.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ray</span>
+
+<span class="c1"># define a simple function that takes a number and returns its square</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="c1"># initialize Ray</span>
+<span class="n">ray</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1"># create a remote function that squares a list of numbers in parallel</span>
+<span class="nd">@ray</span><span class="o">.</span><span class="n">remote</span>
+<span class="k">def</span> <span class="nf">square_list</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">square</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">]</span>
+
+<span class="c1"># define a list of numbers to square</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># split the list into two parts</span>
+<span class="n">split_idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="n">part1</span><span class="p">,</span> <span class="n">part2</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[:</span><span class="n">split_idx</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">split_idx</span><span class="p">:]</span>
+
+<span class="c1"># call the remote function in parallel on the two parts</span>
+<span class="n">part1_result</span> <span class="o">=</span> <span class="n">square_list</span><span class="o">.</span><span class="n">remote</span><span class="p">(</span><span class="n">part1</span><span class="p">)</span>
+<span class="n">part2_result</span> <span class="o">=</span> <span class="n">square_list</span><span class="o">.</span><span class="n">remote</span><span class="p">(</span><span class="n">part2</span><span class="p">)</span>
+
+<span class="c1"># get the results and combine them</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">ray</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">part1_result</span><span class="p">)</span> <span class="o">+</span> <span class="n">ray</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">part2_result</span><span class="p">)</span>
+
+<span class="c1"># print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/claire/vscode/clairerepos/_notebooks/2023-04-30-unit4hacks.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-04-30-unit4hacks.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import ray
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-04-30-unit4hacks.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> # define a simple function that takes a number and returns its square
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/claire/vscode/clairerepos/_notebooks/2023-04-30-unit4hacks.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> def square(x):
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ray'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="ClaireChen3/clairerepos"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/clairerepos/week%2027/2023/04/30/unit4hacks.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/clairerepos/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://clairechen3.github.io/clairerepos/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/clairerepos/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>this is Claire Chen&#39;s blog for APCSP</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/clairerepos/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
